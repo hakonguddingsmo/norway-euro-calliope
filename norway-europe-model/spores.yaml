@@ -1,0 +1,21 @@
+
+#scenarios:
+    #example_scenario: ['override1', 'override2'] #defines a combination of overrides as a scenario
+    
+overrides:
+    spores:
+        run.mode: spores
+        run.spores_options:
+            score_cost_class: 'spores_score'
+            slack_cost_group: 'systemwide_cost_max'
+            slack: 0.1 #0.1=10%
+            spores_number: 10
+            objective_cost_class: {'monetary': 0, 'spores_score': 1}
+        run.objective_options.cost_class: {'monetary': 1, 'spores_score': 0}
+        group_constraints:
+            systemwide_cost_max.cost_max.monetary: 1e20  # very large, non-infinite value
+
+        #techs.battery.costs.spores_score.energy_cap: 1
+        #techs.battery.costs.spores_score.interest_rate: 1
+        #techs.ac_transmission.costs.spores_score.energy_cap: 1
+        #techs.ac_transmission.costs.spores_score.interest_rate: 1

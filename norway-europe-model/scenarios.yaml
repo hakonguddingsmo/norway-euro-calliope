@@ -1,0 +1,404 @@
+#scenarios:
+    #example_scenario: ['override1', 'override2'] #defines a combination of overrides as a scenario
+scenarios:
+    norway_wind_unconstrained_norway_to_europe_trans_50: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained', 'norway_to_europe_trans_50']
+    norway_wind_unconstrained_norway_to_europe_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained', 'norway_to_europe_trans']
+    norway_wind_unconstrained_norway_to_europe_trans_GBR_planned: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained', 'norway_to_europe_trans_GBR_planned']
+    norway_wind_unconstrained_norway_to_europe_trans_80: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained', 'norway_to_europe_trans_80']
+    norway_wind_10GW_norway_to_europe_trans_50: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW', 'norway_to_europe_trans_50']
+    norway_wind_10GW_norway_to_europe_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW', 'norway_to_europe_trans']
+    norway_wind_10GW_norway_to_europe_trans_GBR_planned: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW', 'norway_to_europe_trans_GBR_planned']
+    norway_wind_10GW_norway_to_europe_trans_80: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW', 'norway_to_europe_trans_80']
+    norway_wind_5GW_norway_to_europe_trans_50: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW', 'norway_to_europe_trans_50']
+    norway_wind_5GW_norway_to_europe_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW', 'norway_to_europe_trans']
+    norway_wind_5GW_norway_to_europe_trans_GBR_planned: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW', 'norway_to_europe_trans_GBR_planned']
+    norway_wind_5GW_norway_to_europe_trans_80: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW', 'norway_to_europe_trans_80']
+    norway_wind_0GW_norway_to_europe_trans_50: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW', 'norway_to_europe_trans_50']
+    norway_wind_0GW_norway_to_europe_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW', 'norway_to_europe_trans']
+    norway_wind_0GW_norway_to_europe_trans_GBR_planned: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW', 'norway_to_europe_trans_GBR_planned']
+    norway_wind_0GW_norway_to_europe_trans_80: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW', 'norway_to_europe_trans_80']
+    norway_wind_0GW_norway_to_europe_trans_0: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW', 'norway_to_europe_trans_0']
+    norway_wind_5GW_norway_to_europe_trans_0: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW', 'norway_to_europe_trans_0']
+    norway_wind_10GW_norway_to_europe_trans_0: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW', 'norway_to_europe_trans_0']
+    norway_wind_unconstrained_norway_to_europe_trans_0: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained', 'norway_to_europe_trans_0']
+    norway_wind_0GW_unconstrained_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_0GW']
+    norway_wind_5GW_unconstrained_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_5GW']
+    norway_wind_10GW_unconstrained_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_10GW']
+    norway_wind_unconstrained_unconstrained_trans: ['dea-renewable-cost', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55', 'EU_min_ren_share', 'norway_wind_unconstrained']
+
+#Transmission overrides options (note:no override-> no constraint): norway_to_europe_trans, norway_to_europe_trans_50, norway_to_europe_trans_80, norway_to_europe_trans_GBR_planned
+    test1: ['norway_min_offshore', 'onshore_wind_constraints', 'dea-renewable-cost','No_transmission']
+    base_case_nor_trans: ['norway_min_offshore', 'onshore_wind_constraints', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55','within_norway_transmission','EU_min_ren_share', 'dea-renewable-cost-2030']
+    base_case: ['norway_min_offshore', 'onshore_wind_constraints', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55','EU_min_ren_share', 'norway_to_europe_trans','dea-renewable-cost-2030']
+    base_case_no_trans_limit: ['norway_min_offshore', 'onshore_wind_constraints', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55','EU_min_ren_share','dea-renewable-cost-2030']
+    unconstrained_case: ['dea-renewable-cost-2030', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55','EU_min_ren_share']
+    unconstrained_case_with_transmission_const: ['dea-renewable-cost-2030', 'ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint_55','EU_min_ren_share','norway_to_europe_trans']
+
+overrides:
+#Norwegian offshore wind at a minimum to 2040 target of 30GW
+    co2_constraint_55:
+        group_constraints:
+            # A constraint group to apply a systemwide CO2 cap
+            systemwide_co2_cap:
+                cost_max:
+                    co2: 0.0000084105 #estimate of 55% reduction from 1990 levels: 0.0000084105 = 841.05 MtonnCO2 equ, 1990 co2: 0.00001869, 90% reduc:8.4105e-7, 80%reduc 0.0000016821, 70% reduc: 0.00000588735
+    norway_min_offshore:
+        group_constraints:
+            norway_min_offshore_prod:
+                techs: ['wind_offshore']
+                locs: ['Sorvest-A','Nordvest-A', 'Nordvest-B', 'Nordvest-C','Sonnavind-A', 'Sorvest-C', 'Sorvest-B', 'Vestavind-A', 'Vestavind-F', 'Sorvest-E', 'Vestavind-B', 'Vestavind-C', 'Vestavind-D', 'Sorvest-F', 'Sorvest-B', 'Nordavind-B', 'Nordavind-A', 'Nordavind-D', 'Nordavind-C', 'Vestavind-E', 'Sorvest-D']
+                energy_cap_min: 0.3 #Minimum 30GW of Norwegian offshore wind
+    EU_min_ren_share:
+        group_constraints:
+            eu_min_ren:
+                techs: ['ex_wind_onshore','ex_hydro_run_of_river','ex_hydro_reservoir','ex_wind_offshore','ex_pumped_hydro','ex_open_field_pv','ex_biofuel','open_field_pv','roof_mounted_pv','wind_onshore_monopoly','wind_onshore_competing','wind_offshore','hydro_run_of_river','hydro_reservoir','biofuel']
+                locs: ['ALB', 'AUT', 'BEL', 'BIH', 'BGR', 'HRV', 'CZE', 'DNK', 'EST', 'FIN', 'FRA', 'DEU', 'GRC', 'HUN', 'IRL', 'ITA', 'LVA', 'LTU', 'LUX', 'MNE', 'NLD', 'MKD', 'NOR-16_1', 'POL', 'PRT', 'ROU', 'SRB', 'SVK', 'SVN', 'ESP', 'SWE', 'CHE', 'GBR','Sorvest-A','Nordvest-A', 'Nordvest-B', 'Nordvest-C','Sonnavind-A', 'Sorvest-C', 'Sorvest-B', 'Vestavind-A', 'Vestavind-F', 'Sorvest-E', 'Vestavind-B', 'Vestavind-C', 'Vestavind-D', 'Sorvest-F', 'Sorvest-B', 'Nordavind-B', 'Nordavind-A', 'Nordavind-D', 'Nordavind-C', 'Vestavind-E', 'Sorvest-D','NOR-1_1', 'NOR-2_1', 'NOR-3_1', 'NOR-4_1', 'NOR-5_1', 'NOR-6_1', 'NOR-7_1', 'NOR-8_1', 'NOR-9_1', 'NOR-10_1', 'NOR-11_1', 'NOR-12_1', 'NOR-13_1', 'NOR-14_1', 'NOR-15_1', 'NOR-17_1', 'NOR-18_1', 'NOR-19_1']
+                demand_share_min:
+                    electricity: 0.4
+#Constraints for Norwegian onshore wind: ['norway_wind_unconstrained','norway_wind_10GW','norway_wind_5GW','norway_wind_0GW']
+#Transmission constraints: ['norway_to_europe_trans_50%','norway_to_europe_trans','norway_to_europe_trans_GBR_planned','norway_to_europe_trans_80']
+    norway_wind_unconstrained:
+        group_constraints:
+            nor_wind_10GW:
+                techs: ['wind_onshore_monopoly','wind_onshore_competing']
+                locs: ['NOR-1_1', 'NOR-2_1', 'NOR-3_1', 'NOR-4_1', 'NOR-5_1', 'NOR-6_1', 'NOR-7_1', 'NOR-8_1', 'NOR-9_1', 'NOR-10_1', 'NOR-11_1', 'NOR-12_1', 'NOR-13_1', 'NOR-14_1', 'NOR-15_1', 'NOR-16_1', 'NOR-17_1', 'NOR-18_1', 'NOR-19_1']
+                energy_cap_max: 50 #0.1=10GW # Uncontrained = 0.19183414939545215
+    norway_wind_10GW: #roughly 50% of base case
+        group_constraints:
+            nor_wind_10GW:
+                techs: ['wind_onshore_monopoly','wind_onshore_competing']
+                locs: ['NOR-1_1', 'NOR-2_1', 'NOR-3_1', 'NOR-4_1', 'NOR-5_1', 'NOR-6_1', 'NOR-7_1', 'NOR-8_1', 'NOR-9_1', 'NOR-10_1', 'NOR-11_1', 'NOR-12_1', 'NOR-13_1', 'NOR-14_1', 'NOR-15_1', 'NOR-16_1', 'NOR-17_1', 'NOR-18_1', 'NOR-19_1']
+                energy_cap_max: 0.10 #0.1=10GW # Uncontrained = 0.19183414939545215
+    
+    norway_wind_5GW: #roughly 50% of base case
+        group_constraints:
+            nor_wind_10GW:
+                techs: ['wind_onshore_monopoly','wind_onshore_competing']
+                locs: ['NOR-1_1', 'NOR-2_1', 'NOR-3_1', 'NOR-4_1', 'NOR-5_1', 'NOR-6_1', 'NOR-7_1', 'NOR-8_1', 'NOR-9_1', 'NOR-10_1', 'NOR-11_1', 'NOR-12_1', 'NOR-13_1', 'NOR-14_1', 'NOR-15_1', 'NOR-16_1', 'NOR-17_1', 'NOR-18_1', 'NOR-19_1']
+                energy_cap_max: 0.05 #0.1=10GW # Uncontrained = 0.19183414939545215
+    
+    norway_wind_0GW: #roughly 50% of base case
+        group_constraints:
+            nor_wind_10GW:
+                techs: ['wind_onshore_monopoly','wind_onshore_competing']
+                locs: ['NOR-1_1', 'NOR-2_1', 'NOR-3_1', 'NOR-4_1', 'NOR-5_1', 'NOR-6_1', 'NOR-7_1', 'NOR-8_1', 'NOR-9_1', 'NOR-10_1', 'NOR-11_1', 'NOR-12_1', 'NOR-13_1', 'NOR-14_1', 'NOR-15_1', 'NOR-16_1', 'NOR-17_1', 'NOR-18_1', 'NOR-19_1']
+                energy_cap_max: 0 #0.1=10GW # Uncontrained = 0.19183414939545215
+#Constraints for Norwegian transmission
+    norway_to_europe_trans:
+        links:   
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0164  # (100,000 MW)
+            
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW)
+            
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.007  # (100,000 MW)
+            
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW) 0.028 was planned but canceled
+
+    norway_to_europe_trans_GBR_planned:
+        links:   
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0164  # (100,000 MW)
+            
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW)
+            
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.007  # (100,000 MW)
+            
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.028  # (100,000 MW) 0.028 was planned but canceled
+
+    norway_to_europe_trans_80:
+        links:   
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.01312  # (100,000 MW)
+            
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0112  # (100,000 MW)
+            
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0056  # (100,000 MW)
+            
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0112  # (100,000 MW) 0.028 was planned but canceled
+
+    norway_to_europe_trans_50:
+        links:   
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0082  # (100,000 MW)
+            
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.07  # (100,000 MW)
+            
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0035  # (100,000 MW)
+            
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.007  # (100,000 MW) 0.028 was planned but canceled
+
+    norway_to_europe_trans_0:
+        links:   
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+            
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+            
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+            
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW) 0.028 was planned but canceled
+
+    onshore_wind_constraints:
+        locations:
+            NOR-1_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-2_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-3_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-4_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-5_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-6_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-7_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-8_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-9_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-10_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-11_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-12_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-13_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-14_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-15_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-16_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-17_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-18_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+            NOR-19_1:
+                techs:
+                    wind_onshore_monopoly:
+                        constraints:
+                            energy_cap_max: 0.0
+                    wind_onshore_competing:
+                        constraints:
+                            energy_cap_max: 0.0
+
+    Planned_transmission_constraints:
+        links:
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.028  # (100,000 MW)
+
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0164  # (100,000 MW)
+
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW)
+
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                energy_cap_equals: 0.007  # (100,000 MW)
+
+    Current_transmission_constraints:
+        links:
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW)
+
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0164  # (100,000 MW)
+
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.014  # (100,000 MW)
+
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                energy_cap_equals: 0.007  # (100,000 MW)
+
+    No_transmission:
+        links:
+            GBR,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0  # (100,000 MW)
+
+            DNK,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0  # (100,000 MW)
+
+            DEU,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0  # (100,000 MW)
+
+            NLD,NOR-18_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.0  # (100,000 MW)
+    spores:
+        run.mode: spores
+        run.spores_options:
+            score_cost_class: 'spores_score'
+            slack_cost_group: 'systemwide_cost_max'
+            slack: 0.1 #0.1=10%
+            spores_number: 10
+            objective_cost_class: {'monetary': 0, 'spores_score': 1}
+        run.objective_options.cost_class: {'monetary': 1, 'spores_score': 0}
+        group_constraints:
+            systemwide_cost_max.cost_max.monetary: 1e20  # very large, non-infinite value
+
+        #techs.ccgt.costs.spores_score.energy_cap: 0
+        #techs.ccgt.costs.spores_score.interest_rate: 1
+        #techs.csp.costs.spores_score.energy_cap: 0
+        #techs.csp.costs.spores_score.interest_rate: 1
+        #techs.battery.costs.spores_score.energy_cap: 0
+        #techs.battery.costs.spores_score.interest_rate: 1
+        #techs.ac_transmission.costs.spores_score.energy_cap: 0
+        #techs.ac_transmission.costs.spores_score.interest_rate: 1

@@ -1,0 +1,50 @@
+overrides:
+    within_norway_transmission:
+        links:
+            NOR-9_1,NOR-10_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.012  # (100,000 MW)
+
+            NOR-3_1,NOR-16_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.035  # (100,000 MW)
+
+            NOR-13_1,NOR-16_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+
+            NOR-7_1,NOR-13_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.006  # (100,000 MW)
+
+            NOR-8_1,NOR-14_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.005  # (100,000 MW)
+
+            NOR-4_1,NOR-7_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.039  # (100,000 MW)
+
+            NOR-4_1,NOR-14_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+
+            NOR-11_1,NOR-14_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+
+            NOR-7_1,NOR-16_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+
+            NOR-8_1,NOR-11_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0.005  # (100,000 MW)
+
+            NOR-11_1,NOR-15_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)
+
+            NOR-6_1,NOR-15_1:
+                techs.ac_transmission.constraints:
+                    energy_cap_equals: 0  # (100,000 MW)

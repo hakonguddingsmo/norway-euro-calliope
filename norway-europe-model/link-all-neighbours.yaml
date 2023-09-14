@@ -1,0 +1,542 @@
+
+links:
+    
+    AUT,CZE:
+        techs:
+            ac_transmission:
+    
+    AUT,DEU:
+        techs:
+            ac_transmission:
+    
+    AUT,HUN:
+        techs:
+            ac_transmission:
+    
+    AUT,ITA:
+        techs:
+            ac_transmission:
+    
+    AUT,SVK:
+        techs:
+            ac_transmission:
+    
+    AUT,SVN:
+        techs:
+            ac_transmission:
+    
+    AUT,CHE:
+        techs:
+            ac_transmission:
+    
+    BEL,FRA:
+        techs:
+            ac_transmission:
+    
+    BEL,DEU:
+        techs:
+            ac_transmission:
+    
+    BEL,LUX:
+        techs:
+            ac_transmission:
+    
+    BEL,NLD:
+        techs:
+            ac_transmission:
+    
+    BEL,GBR:
+        techs:
+            ac_transmission:
+    
+    BGR,GRC:
+        techs:
+            ac_transmission:
+    
+    BGR,ROU:
+        techs:
+            ac_transmission:
+    
+    BGR,MKD:
+        techs:
+            ac_transmission:
+    
+    BGR,SRB:
+        techs:
+            ac_transmission:
+    
+    HRV,HUN:
+        techs:
+            ac_transmission:
+    
+    HRV,SVN:
+        techs:
+            ac_transmission:
+    
+    HRV,BIH:
+        techs:
+            ac_transmission:
+    
+    HRV,SRB:
+        techs:
+            ac_transmission:
+    
+    CYP,GRC:
+        techs:
+            ac_transmission:
+    
+    CZE,DEU:
+        techs:
+            ac_transmission:
+    
+    CZE,POL:
+        techs:
+            ac_transmission:
+    
+    CZE,SVK:
+        techs:
+            ac_transmission:
+    
+    DNK,DEU:
+        techs:
+            ac_transmission:
+    
+    DNK,SWE:
+        techs:
+            ac_transmission:
+    
+    DNK,NLD:
+        techs:
+            ac_transmission:
+    
+    DNK,NOR:
+        techs:
+            ac_transmission:
+    
+    DNK,GBR:
+        techs:
+            ac_transmission:
+    
+    EST,LVA:
+        techs:
+            ac_transmission:
+    
+    EST,FIN:
+        techs:
+            ac_transmission:
+    
+    FIN,SWE:
+        techs:
+            ac_transmission:
+    
+    FIN,NOR:
+        techs:
+            ac_transmission:
+    
+    FRA,DEU:
+        techs:
+            ac_transmission:
+    
+    FRA,ITA:
+        techs:
+            ac_transmission:
+    
+    FRA,LUX:
+        techs:
+            ac_transmission:
+    
+    FRA,ESP:
+        techs:
+            ac_transmission:
+    
+    FRA,CHE:
+        techs:
+            ac_transmission:
+    
+    FRA,GBR:
+        techs:
+            ac_transmission:
+    
+    DEU,LUX:
+        techs:
+            ac_transmission:
+    
+    DEU,NLD:
+        techs:
+            ac_transmission:
+    
+    DEU,POL:
+        techs:
+            ac_transmission:
+    
+    DEU,CHE:
+        techs:
+            ac_transmission:
+    
+    DEU,SWE:
+        techs:
+            ac_transmission:
+    
+    DEU,NOR:
+        techs:
+            ac_transmission:
+    
+    GRC,ALB:
+        techs:
+            ac_transmission:
+    
+    GRC,MKD:
+        techs:
+            ac_transmission:
+    
+    GRC,ITA:
+        techs:
+            ac_transmission:
+    
+    HUN,ROU:
+        techs:
+            ac_transmission:
+    
+    HUN,SVK:
+        techs:
+            ac_transmission:
+    
+    HUN,SVN:
+        techs:
+            ac_transmission:
+    
+    HUN,SRB:
+        techs:
+            ac_transmission:
+    
+    IRL,GBR:
+        techs:
+            ac_transmission:
+    
+    ITA,SVN:
+        techs:
+            ac_transmission:
+    
+    ITA,CHE:
+        techs:
+            ac_transmission:
+    
+    LVA,LTU:
+        techs:
+            ac_transmission:
+    
+    LTU,POL:
+        techs:
+            ac_transmission:
+    
+    LTU,SWE:
+        techs:
+            ac_transmission:
+    
+    NLD,NOR:
+        techs:
+            ac_transmission:
+    
+    NLD,GBR:
+        techs:
+            ac_transmission:
+    
+    POL,SVK:
+        techs:
+            ac_transmission:
+    
+    POL,SWE:
+        techs:
+            ac_transmission:
+    
+    PRT,ESP:
+        techs:
+            ac_transmission:
+    
+    ROU,SRB:
+        techs:
+            ac_transmission:
+    
+    SWE,NOR:
+        techs:
+            ac_transmission:
+    
+    GBR,NOR:
+        techs:
+            ac_transmission:
+    
+    ALB,MKD:
+        techs:
+            ac_transmission:
+    
+    ALB,MNE:
+        techs:
+            ac_transmission:
+    
+    BIH,MNE:
+        techs:
+            ac_transmission:
+    
+    BIH,SRB:
+        techs:
+            ac_transmission:
+    
+    MKD,SRB:
+        techs:
+            ac_transmission:
+    
+    MNE,SRB:
+        techs:
+            ac_transmission:
+            
+    GBR,NOR-13_1:
+        techs:
+            ac_transmission:
+            
+    NLD,NOR-18_1:
+        techs:
+            ac_transmission:
+            
+    DEU,NOR-18_1:
+        techs:
+            ac_transmission:
+            
+    DNK,NOR-18_1:
+        techs:
+            ac_transmission:
+    NOR-1_1,NOR-2_1:
+        techs:
+            ac_transmission:
+    
+    NOR-1_1,NOR-4_1:
+        techs:
+            ac_transmission:
+    
+    NOR-1_1,NOR-6_1:
+        techs:
+            ac_transmission:
+    
+    NOR-1_1,NOR-11_1:
+        techs:
+            ac_transmission:
+    
+    NOR-1_1,NOR-12_1:
+        techs:
+            ac_transmission:
+    
+    NOR-3_1,NOR-13_1:
+        techs:
+            ac_transmission:
+    
+    NOR-3_1,NOR-16_1:
+        techs:
+            ac_transmission:
+    
+    NOR-3_1,NOR-18_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-7_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-11_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-12_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-14_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-16_1:
+        techs:
+            ac_transmission:
+    
+    NOR-4_1,NOR-19_1:
+        techs:
+            ac_transmission:
+    
+    NOR-5_1,NOR-17_1:
+        techs:
+            ac_transmission:
+    
+    NOR-6_1,NOR-11_1:
+        techs:
+            ac_transmission:
+    
+    NOR-6_1,NOR-15_1:
+        techs:
+            ac_transmission:
+    
+    NOR-7_1,NOR-13_1:
+        techs:
+            ac_transmission:
+    
+    NOR-7_1,NOR-14_1:
+        techs:
+            ac_transmission:
+    
+    NOR-7_1,NOR-16_1:
+        techs:
+            ac_transmission:
+    
+    NOR-8_1,NOR-11_1:
+        techs:
+            ac_transmission:
+    
+    NOR-8_1,NOR-14_1:
+        techs:
+            ac_transmission:
+    
+    NOR-8_1,NOR-15_1:
+        techs:
+            ac_transmission:
+    
+    NOR-9_1,NOR-10_1:
+        techs:
+            ac_transmission:
+    
+    NOR-9_1,NOR-15_1:
+        techs:
+            ac_transmission:
+    
+    NOR-10_1,NOR-17_1:
+        techs:
+            ac_transmission:
+    
+    NOR-11_1,NOR-12_1:
+        techs:
+            ac_transmission:
+    
+    NOR-11_1,NOR-14_1:
+        techs:
+            ac_transmission:
+    
+    NOR-11_1,NOR-15_1:
+        techs:
+            ac_transmission:
+    
+    NOR-13_1,NOR-16_1:
+        techs:
+            ac_transmission:
+    
+    NOR-13_1,NOR-18_1:
+        techs:
+            ac_transmission:
+    
+    NOR-16_1,NOR-19_1:
+        techs:
+            ac_transmission:
+            
+    SWE,NOR-6_1:
+        techs:
+            ac_transmission:
+    
+    SWE,NOR-9_1:
+        techs:
+            ac_transmission:
+    
+    SWE,NOR-10_1:
+        techs:
+            ac_transmission:
+    
+    SWE,NOR-15_1:
+        techs:
+            ac_transmission:
+            
+    SWE,NOR-17_1:
+        techs:
+            ac_transmission:
+            
+    SWE,NOR-1_1:
+        techs:
+            ac_transmission:
+    
+    SWE,NOR-2_1:
+        techs:
+            ac_transmission:
+            
+    Nordvest-A,NOR-9_1:
+        techs:
+            ac_transmission:
+
+    Nordvest-C,NOR-15_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-A,NOR-14_1:
+        techs:
+            ac_transmission:
+
+    Sonnavind-A,NOR-18_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-C,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Nordvest-B,NOR-9_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-F,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-E,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-A,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-B,NOR-14_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-C,NOR-7_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-D,NOR-7_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-F,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-B,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Nordavind-B,NOR-5_1:
+        techs:
+            ac_transmission:
+
+    Nordavind-A,NOR-5_1:
+        techs:
+            ac_transmission:
+
+    Nordavind-D,NOR-17_1:
+        techs:
+            ac_transmission:
+
+    Nordavind-C,NOR-17_1:
+        techs:
+            ac_transmission:
+
+    Vestavind-E,NOR-13_1:
+        techs:
+            ac_transmission:
+
+    Sorvest-D,NOR-13_1:
+        techs:
+            ac_transmission:
+

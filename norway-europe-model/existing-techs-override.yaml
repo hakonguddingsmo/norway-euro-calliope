@@ -1,0 +1,1948 @@
+scenarios:
+    existing_techs: ['ex_tech_costs', 'ex_techs_loc', 'ex_energy_cap', 'co2_constraint']
+    
+overrides:
+
+    ex_tech_costs:
+        techs.ex_open_field_pv: # Sheet 22 - Photovoltaics Large (last updated 2016)
+            constraints:
+                lifetime: 40 # inverter lifetime is shorter but the replacement cost is included in O&M
+            costs.monetary:
+                energy_cap: 0 # (10,000 EUR2015/MW) with DC/AC sizing factor
+                om_annual: 0.503236 # (10,000 EUR2015/MW/year) with DC/AC sizing factor
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+        techs.ex_wind_offshore: # Sheet 21 Offshore Turbines (last updated 2019)
+            constraints.lifetime: 30
+            costs.monetary:
+                energy_cap: 0 # (10,000 EUR2015/MW)
+                om_annual: 2.8748652000000003 # (10,000 EUR2015/MW/year)
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+        techs.ex_coal.costs.monetary.energy_cap: 0
+
+        techs.ex_lignite.costs.monetary.energy_cap: 0
+
+        techs.ex_oils.costs.monetary.energy_cap: 0
+
+        techs.ex_ccgt.costs.monetary.energy_cap: 0
+
+        techs.ex_nuclear.costs.monetary.energy_cap: 0
+
+    ex_techs_loc:
+        locations:
+            ALB.techs.ex_nuclear:
+
+            AUT.techs.ex_nuclear:
+
+            BEL.techs.ex_nuclear:
+
+            BIH.techs.ex_nuclear:
+
+            BGR.techs.ex_nuclear:
+
+            HRV.techs.ex_nuclear:
+
+            CZE.techs.ex_nuclear:
+
+            DNK.techs.ex_nuclear:
+
+            EST.techs.ex_nuclear:
+
+            FIN.techs.ex_nuclear:
+
+            FRA.techs.ex_nuclear:
+
+            DEU.techs.ex_nuclear:
+
+            GRC.techs.ex_nuclear:
+
+            HUN.techs.ex_nuclear:
+
+            IRL.techs.ex_nuclear:
+
+            ITA.techs.ex_nuclear:
+
+            LVA.techs.ex_nuclear:
+
+            LTU.techs.ex_nuclear:
+
+            LUX.techs.ex_nuclear:
+
+            MNE.techs.ex_nuclear:
+
+            NLD.techs.ex_nuclear:
+
+            MKD.techs.ex_nuclear:
+
+            POL.techs.ex_nuclear:
+
+            PRT.techs.ex_nuclear:
+
+            ROU.techs.ex_nuclear:
+
+            SRB.techs.ex_nuclear:
+
+            SVK.techs.ex_nuclear:
+
+            SVN.techs.ex_nuclear:
+
+            ESP.techs.ex_nuclear:
+
+            SWE.techs.ex_nuclear:
+
+            CHE.techs.ex_nuclear:
+
+            GBR.techs.ex_nuclear:
+
+            ALB.techs.ex_coal:
+
+            AUT.techs.ex_coal:
+
+            BEL.techs.ex_coal:
+
+            BIH.techs.ex_coal:
+
+            BGR.techs.ex_coal:
+
+            HRV.techs.ex_coal:
+
+            CZE.techs.ex_coal:
+
+            DNK.techs.ex_coal:
+
+            EST.techs.ex_coal:
+
+            FIN.techs.ex_coal:
+
+            FRA.techs.ex_coal:
+
+            DEU.techs.ex_coal:
+
+            GRC.techs.ex_coal:
+
+            HUN.techs.ex_coal:
+
+            IRL.techs.ex_coal:
+
+            ITA.techs.ex_coal:
+
+            LVA.techs.ex_coal:
+
+            LTU.techs.ex_coal:
+
+            LUX.techs.ex_coal:
+
+            MNE.techs.ex_coal:
+
+            NLD.techs.ex_coal:
+
+            MKD.techs.ex_coal:
+
+            POL.techs.ex_coal:
+
+            PRT.techs.ex_coal:
+
+            ROU.techs.ex_coal:
+
+            SRB.techs.ex_coal:
+
+            SVK.techs.ex_coal:
+
+            SVN.techs.ex_coal:
+
+            ESP.techs.ex_coal:
+
+            SWE.techs.ex_coal:
+
+            CHE.techs.ex_coal:
+
+            GBR.techs.ex_coal:
+
+            ALB.techs.ex_wind_onshore:
+
+            AUT.techs.ex_wind_onshore:
+
+            BEL.techs.ex_wind_onshore:
+
+            BIH.techs.ex_wind_onshore:
+
+            BGR.techs.ex_wind_onshore:
+
+            HRV.techs.ex_wind_onshore:
+
+            CZE.techs.ex_wind_onshore:
+
+            DNK.techs.ex_wind_onshore:
+
+            EST.techs.ex_wind_onshore:
+
+            FIN.techs.ex_wind_onshore:
+
+            FRA.techs.ex_wind_onshore:
+
+            DEU.techs.ex_wind_onshore:
+
+            GRC.techs.ex_wind_onshore:
+
+            HUN.techs.ex_wind_onshore:
+
+            IRL.techs.ex_wind_onshore:
+
+            ITA.techs.ex_wind_onshore:
+
+            LVA.techs.ex_wind_onshore:
+
+            LTU.techs.ex_wind_onshore:
+
+            LUX.techs.ex_wind_onshore:
+
+            MNE.techs.ex_wind_onshore:
+
+            NLD.techs.ex_wind_onshore:
+
+            MKD.techs.ex_wind_onshore:
+
+            POL.techs.ex_wind_onshore:
+
+            PRT.techs.ex_wind_onshore:
+
+            ROU.techs.ex_wind_onshore:
+
+            SRB.techs.ex_wind_onshore:
+
+            SVK.techs.ex_wind_onshore:
+
+            SVN.techs.ex_wind_onshore:
+
+            ESP.techs.ex_wind_onshore:
+
+            SWE.techs.ex_wind_onshore:
+
+            CHE.techs.ex_wind_onshore:
+
+            GBR.techs.ex_wind_onshore:
+
+            ALB.techs.ex_lignite:
+
+            AUT.techs.ex_lignite:
+
+            BEL.techs.ex_lignite:
+
+            BIH.techs.ex_lignite:
+
+            BGR.techs.ex_lignite:
+
+            HRV.techs.ex_lignite:
+
+            CZE.techs.ex_lignite:
+
+            DNK.techs.ex_lignite:
+
+            EST.techs.ex_lignite:
+
+            FIN.techs.ex_lignite:
+
+            FRA.techs.ex_lignite:
+
+            DEU.techs.ex_lignite:
+
+            GRC.techs.ex_lignite:
+
+            HUN.techs.ex_lignite:
+
+            IRL.techs.ex_lignite:
+
+            ITA.techs.ex_lignite:
+
+            LVA.techs.ex_lignite:
+
+            LTU.techs.ex_lignite:
+
+            LUX.techs.ex_lignite:
+
+            MNE.techs.ex_lignite:
+
+            NLD.techs.ex_lignite:
+
+            MKD.techs.ex_lignite:
+
+            POL.techs.ex_lignite:
+
+            PRT.techs.ex_lignite:
+
+            ROU.techs.ex_lignite:
+
+            SRB.techs.ex_lignite:
+
+            SVK.techs.ex_lignite:
+
+            SVN.techs.ex_lignite:
+
+            ESP.techs.ex_lignite:
+
+            SWE.techs.ex_lignite:
+
+            CHE.techs.ex_lignite:
+
+            GBR.techs.ex_lignite:
+
+            ALB.techs.ex_hydro_run_of_river:
+
+            AUT.techs.ex_hydro_run_of_river:
+
+            BEL.techs.ex_hydro_run_of_river:
+
+            BIH.techs.ex_hydro_run_of_river:
+
+            BGR.techs.ex_hydro_run_of_river:
+
+            HRV.techs.ex_hydro_run_of_river:
+
+            CZE.techs.ex_hydro_run_of_river:
+
+            DNK.techs.ex_hydro_run_of_river:
+
+            EST.techs.ex_hydro_run_of_river:
+
+            FIN.techs.ex_hydro_run_of_river:
+
+            FRA.techs.ex_hydro_run_of_river:
+
+            DEU.techs.ex_hydro_run_of_river:
+
+            GRC.techs.ex_hydro_run_of_river:
+
+            HUN.techs.ex_hydro_run_of_river:
+
+            IRL.techs.ex_hydro_run_of_river:
+
+            ITA.techs.ex_hydro_run_of_river:
+
+            LVA.techs.ex_hydro_run_of_river:
+
+            LTU.techs.ex_hydro_run_of_river:
+
+            LUX.techs.ex_hydro_run_of_river:
+
+            MNE.techs.ex_hydro_run_of_river:
+
+            NLD.techs.ex_hydro_run_of_river:
+
+            MKD.techs.ex_hydro_run_of_river:
+
+            POL.techs.ex_hydro_run_of_river:
+
+            PRT.techs.ex_hydro_run_of_river:
+
+            ROU.techs.ex_hydro_run_of_river:
+
+            SRB.techs.ex_hydro_run_of_river:
+
+            SVK.techs.ex_hydro_run_of_river:
+
+            SVN.techs.ex_hydro_run_of_river:
+
+            ESP.techs.ex_hydro_run_of_river:
+
+            SWE.techs.ex_hydro_run_of_river:
+
+            CHE.techs.ex_hydro_run_of_river:
+
+            GBR.techs.ex_hydro_run_of_river:
+
+            ALB.techs.ex_hydro_reservoir:
+
+            AUT.techs.ex_hydro_reservoir:
+
+            BEL.techs.ex_hydro_reservoir:
+
+            BIH.techs.ex_hydro_reservoir:
+
+            BGR.techs.ex_hydro_reservoir:
+
+            HRV.techs.ex_hydro_reservoir:
+
+            CZE.techs.ex_hydro_reservoir:
+
+            DNK.techs.ex_hydro_reservoir:
+
+            EST.techs.ex_hydro_reservoir:
+
+            FIN.techs.ex_hydro_reservoir:
+
+            FRA.techs.ex_hydro_reservoir:
+
+            DEU.techs.ex_hydro_reservoir:
+
+            GRC.techs.ex_hydro_reservoir:
+
+            HUN.techs.ex_hydro_reservoir:
+
+            IRL.techs.ex_hydro_reservoir:
+
+            ITA.techs.ex_hydro_reservoir:
+
+            LVA.techs.ex_hydro_reservoir:
+
+            LTU.techs.ex_hydro_reservoir:
+
+            LUX.techs.ex_hydro_reservoir:
+
+            MNE.techs.ex_hydro_reservoir:
+
+            NLD.techs.ex_hydro_reservoir:
+
+            MKD.techs.ex_hydro_reservoir:
+
+            POL.techs.ex_hydro_reservoir:
+
+            PRT.techs.ex_hydro_reservoir:
+
+            ROU.techs.ex_hydro_reservoir:
+
+            SRB.techs.ex_hydro_reservoir:
+
+            SVK.techs.ex_hydro_reservoir:
+
+            SVN.techs.ex_hydro_reservoir:
+
+            ESP.techs.ex_hydro_reservoir:
+
+            SWE.techs.ex_hydro_reservoir:
+
+            CHE.techs.ex_hydro_reservoir:
+
+            GBR.techs.ex_hydro_reservoir:
+
+            ALB.techs.ex_wind_offshore:
+
+            AUT.techs.ex_wind_offshore:
+
+            BEL.techs.ex_wind_offshore:
+
+            BIH.techs.ex_wind_offshore:
+
+            BGR.techs.ex_wind_offshore:
+
+            HRV.techs.ex_wind_offshore:
+
+            CZE.techs.ex_wind_offshore:
+
+            DNK.techs.ex_wind_offshore:
+
+            EST.techs.ex_wind_offshore:
+
+            FIN.techs.ex_wind_offshore:
+
+            FRA.techs.ex_wind_offshore:
+
+            DEU.techs.ex_wind_offshore:
+
+            GRC.techs.ex_wind_offshore:
+
+            HUN.techs.ex_wind_offshore:
+
+            IRL.techs.ex_wind_offshore:
+
+            ITA.techs.ex_wind_offshore:
+
+            LVA.techs.ex_wind_offshore:
+
+            LTU.techs.ex_wind_offshore:
+
+            LUX.techs.ex_wind_offshore:
+
+            MNE.techs.ex_wind_offshore:
+
+            NLD.techs.ex_wind_offshore:
+
+            MKD.techs.ex_wind_offshore:
+
+            POL.techs.ex_wind_offshore:
+
+            PRT.techs.ex_wind_offshore:
+
+            ROU.techs.ex_wind_offshore:
+
+            SRB.techs.ex_wind_offshore:
+
+            SVK.techs.ex_wind_offshore:
+
+            SVN.techs.ex_wind_offshore:
+
+            ESP.techs.ex_wind_offshore:
+
+            SWE.techs.ex_wind_offshore:
+
+            CHE.techs.ex_wind_offshore:
+
+            GBR.techs.ex_wind_offshore:
+
+            ALB.techs.ex_pumped_hydro:
+
+            AUT.techs.ex_pumped_hydro:
+
+            BEL.techs.ex_pumped_hydro:
+
+            BIH.techs.ex_pumped_hydro:
+
+            BGR.techs.ex_pumped_hydro:
+
+            HRV.techs.ex_pumped_hydro:
+
+            CZE.techs.ex_pumped_hydro:
+
+            DNK.techs.ex_pumped_hydro:
+
+            EST.techs.ex_pumped_hydro:
+
+            FIN.techs.ex_pumped_hydro:
+
+            FRA.techs.ex_pumped_hydro:
+
+            DEU.techs.ex_pumped_hydro:
+
+            GRC.techs.ex_pumped_hydro:
+
+            HUN.techs.ex_pumped_hydro:
+
+            IRL.techs.ex_pumped_hydro:
+
+            ITA.techs.ex_pumped_hydro:
+
+            LVA.techs.ex_pumped_hydro:
+
+            LTU.techs.ex_pumped_hydro:
+
+            LUX.techs.ex_pumped_hydro:
+
+            MNE.techs.ex_pumped_hydro:
+
+            NLD.techs.ex_pumped_hydro:
+
+            MKD.techs.ex_pumped_hydro:
+
+            POL.techs.ex_pumped_hydro:
+
+            PRT.techs.ex_pumped_hydro:
+
+            ROU.techs.ex_pumped_hydro:
+
+            SRB.techs.ex_pumped_hydro:
+
+            SVK.techs.ex_pumped_hydro:
+
+            SVN.techs.ex_pumped_hydro:
+
+            ESP.techs.ex_pumped_hydro:
+
+            SWE.techs.ex_pumped_hydro:
+
+            CHE.techs.ex_pumped_hydro:
+
+            GBR.techs.ex_pumped_hydro:
+
+            ALB.techs.ex_open_field_pv:
+
+            AUT.techs.ex_open_field_pv:
+
+            BEL.techs.ex_open_field_pv:
+
+            BIH.techs.ex_open_field_pv:
+
+            BGR.techs.ex_open_field_pv:
+
+            HRV.techs.ex_open_field_pv:
+
+            CZE.techs.ex_open_field_pv:
+
+            DNK.techs.ex_open_field_pv:
+
+            EST.techs.ex_open_field_pv:
+
+            FIN.techs.ex_open_field_pv:
+
+            FRA.techs.ex_open_field_pv:
+
+            DEU.techs.ex_open_field_pv:
+
+            GRC.techs.ex_open_field_pv:
+
+            HUN.techs.ex_open_field_pv:
+
+            IRL.techs.ex_open_field_pv:
+
+            ITA.techs.ex_open_field_pv:
+
+            LVA.techs.ex_open_field_pv:
+
+            LTU.techs.ex_open_field_pv:
+
+            LUX.techs.ex_open_field_pv:
+
+            MNE.techs.ex_open_field_pv:
+
+            NLD.techs.ex_open_field_pv:
+
+            MKD.techs.ex_open_field_pv:
+
+            POL.techs.ex_open_field_pv:
+
+            PRT.techs.ex_open_field_pv:
+
+            ROU.techs.ex_open_field_pv:
+
+            SRB.techs.ex_open_field_pv:
+
+            SVK.techs.ex_open_field_pv:
+
+            SVN.techs.ex_open_field_pv:
+
+            ESP.techs.ex_open_field_pv:
+
+            SWE.techs.ex_open_field_pv:
+
+            CHE.techs.ex_open_field_pv:
+
+            GBR.techs.ex_open_field_pv:
+
+            ALB.techs.ex_ccgt:
+
+            AUT.techs.ex_ccgt:
+
+            BEL.techs.ex_ccgt:
+
+            BIH.techs.ex_ccgt:
+
+            BGR.techs.ex_ccgt:
+
+            HRV.techs.ex_ccgt:
+
+            CZE.techs.ex_ccgt:
+
+            DNK.techs.ex_ccgt:
+
+            EST.techs.ex_ccgt:
+
+            FIN.techs.ex_ccgt:
+
+            FRA.techs.ex_ccgt:
+
+            DEU.techs.ex_ccgt:
+
+            GRC.techs.ex_ccgt:
+
+            HUN.techs.ex_ccgt:
+
+            IRL.techs.ex_ccgt:
+
+            ITA.techs.ex_ccgt:
+
+            LVA.techs.ex_ccgt:
+
+            LTU.techs.ex_ccgt:
+
+            LUX.techs.ex_ccgt:
+
+            MNE.techs.ex_ccgt:
+
+            NLD.techs.ex_ccgt:
+
+            MKD.techs.ex_ccgt:
+
+            POL.techs.ex_ccgt:
+
+            PRT.techs.ex_ccgt:
+
+            ROU.techs.ex_ccgt:
+
+            SRB.techs.ex_ccgt:
+
+            SVK.techs.ex_ccgt:
+
+            SVN.techs.ex_ccgt:
+
+            ESP.techs.ex_ccgt:
+
+            SWE.techs.ex_ccgt:
+
+            CHE.techs.ex_ccgt:
+
+            GBR.techs.ex_ccgt:
+
+            ALB.techs.ex_oils:
+
+            AUT.techs.ex_oils:
+
+            BEL.techs.ex_oils:
+
+            BIH.techs.ex_oils:
+
+            BGR.techs.ex_oils:
+
+            HRV.techs.ex_oils:
+
+            CZE.techs.ex_oils:
+
+            DNK.techs.ex_oils:
+
+            EST.techs.ex_oils:
+
+            FIN.techs.ex_oils:
+
+            FRA.techs.ex_oils:
+
+            DEU.techs.ex_oils:
+
+            GRC.techs.ex_oils:
+
+            HUN.techs.ex_oils:
+
+            IRL.techs.ex_oils:
+
+            ITA.techs.ex_oils:
+
+            LVA.techs.ex_oils:
+
+            LTU.techs.ex_oils:
+
+            LUX.techs.ex_oils:
+
+            MNE.techs.ex_oils:
+
+            NLD.techs.ex_oils:
+
+            MKD.techs.ex_oils:
+
+            POL.techs.ex_oils:
+
+            PRT.techs.ex_oils:
+
+            ROU.techs.ex_oils:
+
+            SRB.techs.ex_oils:
+
+            SVK.techs.ex_oils:
+
+            SVN.techs.ex_oils:
+
+            ESP.techs.ex_oils:
+
+            SWE.techs.ex_oils:
+
+            CHE.techs.ex_oils:
+
+            GBR.techs.ex_oils:
+
+            ALB.techs.ex_biofuel:
+
+            AUT.techs.ex_biofuel:
+
+            BEL.techs.ex_biofuel:
+
+            BIH.techs.ex_biofuel:
+
+            BGR.techs.ex_biofuel:
+
+            HRV.techs.ex_biofuel:
+
+            CZE.techs.ex_biofuel:
+
+            DNK.techs.ex_biofuel:
+
+            EST.techs.ex_biofuel:
+
+            FIN.techs.ex_biofuel:
+
+            FRA.techs.ex_biofuel:
+
+            DEU.techs.ex_biofuel:
+
+            GRC.techs.ex_biofuel:
+
+            HUN.techs.ex_biofuel:
+
+            IRL.techs.ex_biofuel:
+
+            ITA.techs.ex_biofuel:
+
+            LVA.techs.ex_biofuel:
+
+            LTU.techs.ex_biofuel:
+
+            LUX.techs.ex_biofuel:
+
+            MNE.techs.ex_biofuel:
+
+            NLD.techs.ex_biofuel:
+
+            MKD.techs.ex_biofuel:
+
+            POL.techs.ex_biofuel:
+
+            PRT.techs.ex_biofuel:
+
+            ROU.techs.ex_biofuel:
+
+            SRB.techs.ex_biofuel:
+
+            SVK.techs.ex_biofuel:
+
+            SVN.techs.ex_biofuel:
+
+            ESP.techs.ex_biofuel:
+
+            SWE.techs.ex_biofuel:
+
+            CHE.techs.ex_biofuel:
+
+            GBR.techs.ex_biofuel:
+
+            NOR-1_1.techs.ex_hydro_run_of_river:
+
+            NOR-2_1.techs.ex_hydro_run_of_river:
+
+            NOR-3_1.techs.ex_hydro_run_of_river:
+
+            NOR-4_1.techs.ex_hydro_run_of_river:
+
+            NOR-5_1.techs.ex_hydro_run_of_river:
+
+            NOR-6_1.techs.ex_hydro_run_of_river:
+
+            NOR-7_1.techs.ex_hydro_run_of_river:
+
+            NOR-8_1.techs.ex_hydro_run_of_river:
+
+            NOR-9_1.techs.ex_hydro_run_of_river:
+
+            NOR-10_1.techs.ex_hydro_run_of_river:
+
+            NOR-11_1.techs.ex_hydro_run_of_river:
+
+            NOR-12_1.techs.ex_hydro_run_of_river:
+
+            NOR-13_1.techs.ex_hydro_run_of_river:
+
+            NOR-14_1.techs.ex_hydro_run_of_river:
+
+            NOR-15_1.techs.ex_hydro_run_of_river:
+
+            NOR-16_1.techs.ex_hydro_run_of_river:
+
+            NOR-17_1.techs.ex_hydro_run_of_river:
+
+            NOR-18_1.techs.ex_hydro_run_of_river:
+
+            NOR-19_1.techs.ex_hydro_run_of_river:
+
+            NOR-1_1.techs.ex_hydro_reservoir:
+
+            NOR-2_1.techs.ex_hydro_reservoir:
+
+            NOR-3_1.techs.ex_hydro_reservoir:
+
+            NOR-4_1.techs.ex_hydro_reservoir:
+
+            NOR-5_1.techs.ex_hydro_reservoir:
+
+            NOR-6_1.techs.ex_hydro_reservoir:
+
+            NOR-7_1.techs.ex_hydro_reservoir:
+
+            NOR-8_1.techs.ex_hydro_reservoir:
+
+            NOR-9_1.techs.ex_hydro_reservoir:
+
+            NOR-10_1.techs.ex_hydro_reservoir:
+
+            NOR-11_1.techs.ex_hydro_reservoir:
+
+            NOR-12_1.techs.ex_hydro_reservoir:
+
+            NOR-13_1.techs.ex_hydro_reservoir:
+
+            NOR-14_1.techs.ex_hydro_reservoir:
+
+            NOR-15_1.techs.ex_hydro_reservoir:
+
+            NOR-16_1.techs.ex_hydro_reservoir:
+
+            NOR-17_1.techs.ex_hydro_reservoir:
+
+            NOR-18_1.techs.ex_hydro_reservoir:
+
+            NOR-19_1.techs.ex_hydro_reservoir:
+
+            NOR-1_1.techs.ex_pumped_hydro:
+
+            NOR-2_1.techs.ex_pumped_hydro:
+
+            NOR-3_1.techs.ex_pumped_hydro:
+
+            NOR-4_1.techs.ex_pumped_hydro:
+
+            NOR-5_1.techs.ex_pumped_hydro:
+
+            NOR-6_1.techs.ex_pumped_hydro:
+
+            NOR-7_1.techs.ex_pumped_hydro:
+
+            NOR-8_1.techs.ex_pumped_hydro:
+
+            NOR-9_1.techs.ex_pumped_hydro:
+
+            NOR-10_1.techs.ex_pumped_hydro:
+
+            NOR-11_1.techs.ex_pumped_hydro:
+
+            NOR-12_1.techs.ex_pumped_hydro:
+
+            NOR-13_1.techs.ex_pumped_hydro:
+
+            NOR-14_1.techs.ex_pumped_hydro:
+
+            NOR-15_1.techs.ex_pumped_hydro:
+
+            NOR-16_1.techs.ex_pumped_hydro:
+
+            NOR-17_1.techs.ex_pumped_hydro:
+
+            NOR-18_1.techs.ex_pumped_hydro:
+
+            NOR-19_1.techs.ex_pumped_hydro:
+
+            NOR-1_1.techs.ex_open_field_pv:
+
+            NOR-2_1.techs.ex_open_field_pv:
+
+            NOR-3_1.techs.ex_open_field_pv:
+
+            NOR-4_1.techs.ex_open_field_pv:
+
+            NOR-5_1.techs.ex_open_field_pv:
+
+            NOR-6_1.techs.ex_open_field_pv:
+
+            NOR-7_1.techs.ex_open_field_pv:
+
+            NOR-8_1.techs.ex_open_field_pv:
+
+            NOR-9_1.techs.ex_open_field_pv:
+
+            NOR-10_1.techs.ex_open_field_pv:
+
+            NOR-11_1.techs.ex_open_field_pv:
+
+            NOR-12_1.techs.ex_open_field_pv:
+
+            NOR-13_1.techs.ex_open_field_pv:
+
+            NOR-14_1.techs.ex_open_field_pv:
+
+            NOR-15_1.techs.ex_open_field_pv:
+
+            NOR-16_1.techs.ex_open_field_pv:
+
+            NOR-17_1.techs.ex_open_field_pv:
+
+            NOR-18_1.techs.ex_open_field_pv:
+
+            NOR-19_1.techs.ex_open_field_pv:
+
+            NOR-1_1.techs.ex_wind_onshore:
+
+            NOR-2_1.techs.ex_wind_onshore:
+
+            NOR-3_1.techs.ex_wind_onshore:
+
+            NOR-4_1.techs.ex_wind_onshore:
+
+            NOR-5_1.techs.ex_wind_onshore:
+
+            NOR-6_1.techs.ex_wind_onshore:
+
+            NOR-7_1.techs.ex_wind_onshore:
+
+            NOR-8_1.techs.ex_wind_onshore:
+
+            NOR-9_1.techs.ex_wind_onshore:
+
+            NOR-10_1.techs.ex_wind_onshore:
+
+            NOR-11_1.techs.ex_wind_onshore:
+
+            NOR-12_1.techs.ex_wind_onshore:
+
+            NOR-13_1.techs.ex_wind_onshore:
+
+            NOR-14_1.techs.ex_wind_onshore:
+
+            NOR-15_1.techs.ex_wind_onshore:
+
+            NOR-16_1.techs.ex_wind_onshore:
+
+            NOR-17_1.techs.ex_wind_onshore:
+
+            NOR-18_1.techs.ex_wind_onshore:
+
+            NOR-19_1.techs.ex_wind_onshore:
+    
+    ex_energy_cap:
+        locations:
+            ALB.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            BEL.techs.ex_nuclear.constraints.energy_cap_equals: 0.059430000000000004
+
+            BIH.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_nuclear.constraints.energy_cap_equals: 0.020800000000000003
+
+            HRV.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            CZE.techs.ex_nuclear.constraints.energy_cap_equals: 0.040400000000000005
+
+            DNK.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            EST.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_nuclear.constraints.energy_cap_equals: 0.027940000000000003
+
+            FRA.techs.ex_nuclear.constraints.energy_cap_equals: 0.6137
+
+            DEU.techs.ex_nuclear.constraints.energy_cap_equals: 0.040560000000000006
+
+            GRC.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            HUN.techs.ex_nuclear.constraints.energy_cap_equals: 0.01916
+
+            IRL.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            LVA.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_nuclear.constraints.energy_cap_equals: 0.004860000000000001
+
+            MKD.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            PRT.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            ROU.techs.ex_nuclear.constraints.energy_cap_equals: 0.013000000000000001
+
+            SRB.techs.ex_nuclear.constraints.energy_cap_equals: 0.0
+
+            SVK.techs.ex_nuclear.constraints.energy_cap_equals: 0.020030000000000003
+
+            SVN.techs.ex_nuclear.constraints.energy_cap_equals: 0.006960000000000001
+
+            ESP.techs.ex_nuclear.constraints.energy_cap_equals: 0.07117000000000001
+
+            SWE.techs.ex_nuclear.constraints.energy_cap_equals: 0.069
+
+            CHE.techs.ex_nuclear.constraints.energy_cap_equals: 0.0297
+
+            GBR.techs.ex_nuclear.constraints.energy_cap_equals: 0.08256000000000001
+
+            ALB.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            BEL.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            BIH.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_coal.constraints.energy_cap_equals: 0.0035600000000000002
+
+            HRV.techs.ex_coal.constraints.energy_cap_equals: 0.00217
+
+            CZE.techs.ex_coal.constraints.energy_cap_equals: 0.012
+
+            DNK.techs.ex_coal.constraints.energy_cap_equals: 0.030220000000000004
+
+            EST.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_coal.constraints.energy_cap_equals: 0.01557
+
+            FRA.techs.ex_coal.constraints.energy_cap_equals: 0.01812
+
+            DEU.techs.ex_coal.constraints.energy_cap_equals: 0.18127000000000001
+
+            GRC.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            HUN.techs.ex_coal.constraints.energy_cap_equals: 0.00042
+
+            IRL.techs.ex_coal.constraints.energy_cap_equals: 0.00855
+
+            ITA.techs.ex_coal.constraints.energy_cap_equals: 0.055760000000000004
+
+            LVA.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_coal.constraints.energy_cap_equals: 0.040060000000000005
+
+            MKD.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_coal.constraints.energy_cap_equals: 0.19043000000000002
+
+            PRT.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            ROU.techs.ex_coal.constraints.energy_cap_equals: 0.00176
+
+            SRB.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            SVK.techs.ex_coal.constraints.energy_cap_equals: 1e-05
+
+            SVN.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            ESP.techs.ex_coal.constraints.energy_cap_equals: 0.03223
+
+            SWE.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_coal.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_coal.constraints.energy_cap_equals: 0.057550000000000004
+
+            ALB.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.03569
+
+            BEL.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.029900000000000003
+
+            BIH.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00135
+
+            BGR.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.007050000000000001
+
+            HRV.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.009810000000000001
+
+            CZE.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0033900000000000002
+
+            DNK.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.047110000000000006
+
+            EST.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00317
+
+            FIN.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.051210000000000006
+
+            FRA.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.22559
+
+            DEU.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.5744800000000001
+
+            GRC.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.045470000000000003
+
+            HUN.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0032300000000000002
+
+            IRL.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.019190000000000002
+
+            ITA.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.11204000000000001
+
+            LVA.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0016500000000000002
+
+            LTU.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.008140000000000001
+
+            LUX.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00152
+
+            MNE.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00118
+
+            NLD.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.061900000000000004
+
+            MKD.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00037000000000000005
+
+            POL.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0897
+
+            PRT.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.05328
+
+            ROU.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.029570000000000003
+
+            SRB.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0053300000000000005
+
+            SVK.techs.ex_wind_onshore.constraints.energy_cap_equals: 3.0000000000000004e-05
+
+            SVN.techs.ex_wind_onshore.constraints.energy_cap_equals: 2e-05
+
+            ESP.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.2932
+
+            SWE.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.12100000000000001
+
+            CHE.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.13932
+
+            ALB.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            BEL.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            BIH.techs.ex_lignite.constraints.energy_cap_equals: 0.018830000000000003
+
+            BGR.techs.ex_lignite.constraints.energy_cap_equals: 0.041190000000000004
+
+            HRV.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            CZE.techs.ex_lignite.constraints.energy_cap_equals: 0.07160000000000001
+
+            DNK.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            EST.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            FRA.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            DEU.techs.ex_lignite.constraints.energy_cap_equals: 0.17692000000000002
+
+            GRC.techs.ex_lignite.constraints.energy_cap_equals: 0.026500000000000003
+
+            HUN.techs.ex_lignite.constraints.energy_cap_equals: 0.01007
+
+            IRL.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            LVA.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_lignite.constraints.energy_cap_equals: 0.0021000000000000003
+
+            NLD.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            MKD.techs.ex_lignite.constraints.energy_cap_equals: 0.00824
+
+            POL.techs.ex_lignite.constraints.energy_cap_equals: 0.0756
+
+            PRT.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            ROU.techs.ex_lignite.constraints.energy_cap_equals: 0.024970000000000003
+
+            SRB.techs.ex_lignite.constraints.energy_cap_equals: 0.060110000000000004
+
+            SVK.techs.ex_lignite.constraints.energy_cap_equals: 0.0027600000000000003
+
+            SVN.techs.ex_lignite.constraints.energy_cap_equals: 0.01191
+
+            ESP.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            SWE.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_lignite.constraints.energy_cap_equals: 0.0
+
+            ALB.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.01779
+
+            AUT.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.05902
+
+            BEL.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00186
+
+            BIH.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00252
+
+            BGR.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0054
+
+            HRV.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00428
+
+            CZE.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0034000000000000002
+
+            DNK.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 5e-05
+
+            EST.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 8e-05
+
+            FIN.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.031670000000000004
+
+            FRA.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.11515000000000002
+
+            DEU.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.03717
+
+            GRC.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00321
+
+            HUN.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00033000000000000005
+
+            IRL.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00216
+
+            ITA.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.10553000000000001
+
+            LVA.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.01609
+
+            LTU.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00128
+
+            LUX.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00022
+
+            MNE.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0030700000000000002
+
+            NLD.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00037000000000000005
+
+            MKD.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00319
+
+            PRT.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.028560000000000002
+
+            ROU.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.027800000000000002
+
+            SRB.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.02049
+
+            SVK.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.01212
+
+            SVN.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.011290000000000001
+
+            ESP.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.011550000000000001
+
+            SWE.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.006050000000000001
+
+            GBR.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.019190000000000002
+
+            ALB.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.027710000000000002
+
+            BEL.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            BIH.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.014560000000000002
+
+            BGR.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0181
+
+            HRV.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.01446
+
+            CZE.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00772
+
+            DNK.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            EST.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            FRA.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.08787
+
+            DEU.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.01433
+
+            GRC.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.024030000000000003
+
+            HUN.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00028000000000000003
+
+            IRL.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0444
+
+            LVA.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00011
+
+            MNE.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0034200000000000003
+
+            NLD.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            MKD.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00644
+
+            POL.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.004690000000000001
+
+            PRT.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.01633
+
+            ROU.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.03356
+
+            SRB.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00487
+
+            SVK.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0041800000000000006
+
+            SVN.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            ESP.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.15773
+
+            SWE.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.163
+
+            CHE.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.055880000000000006
+
+            GBR.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0
+
+            ALB.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            BEL.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.02254
+
+            BIH.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            HRV.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            CZE.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            DNK.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.02306
+
+            EST.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            FRA.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.00014000000000000001
+
+            DEU.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.08129
+
+            GRC.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            HUN.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            IRL.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.00030000000000000003
+
+            LVA.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0322
+
+            MKD.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            PRT.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.00025
+
+            ROU.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            SRB.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            SVK.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            SVN.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            ESP.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            SWE.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_wind_offshore.constraints.energy_cap_equals: 0.12160000000000001
+
+            ALB.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.03363
+
+            BEL.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.013080000000000001
+
+            BIH.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0044
+
+            BGR.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.00864
+
+            HRV.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0028100000000000004
+
+            CZE.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.011720000000000001
+
+            DNK.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            EST.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            FIN.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            FRA.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.05065000000000001
+
+            DEU.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.09280000000000001
+
+            GRC.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0069900000000000006
+
+            HUN.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            IRL.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0029200000000000003
+
+            ITA.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.07256
+
+            LVA.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.009000000000000001
+
+            LUX.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            MKD.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.01591
+
+            PRT.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.037070000000000006
+
+            ROU.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            SRB.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.00642
+
+            SVK.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.009160000000000001
+
+            SVN.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0018000000000000002
+
+            ESP.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.03418
+
+            SWE.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.06697
+
+            GBR.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.04309
+
+            ALB.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.032650000000000005
+
+            BEL.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.06475
+
+            BIH.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.01726
+
+            HRV.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0014000000000000002
+
+            CZE.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.02083
+
+            DNK.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.02322
+
+            EST.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0051
+
+            FIN.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00018
+
+            FRA.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.15308000000000002
+
+            DEU.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.6227900000000001
+
+            GRC.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.051000000000000004
+
+            HUN.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.03002
+
+            IRL.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.054310000000000004
+
+            LVA.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00063
+
+            LTU.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00578
+
+            LUX.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.003
+
+            MNE.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.22590000000000002
+
+            MKD.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00022
+
+            POL.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.10415
+
+            PRT.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.01332
+
+            ROU.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.011850000000000001
+
+            SRB.techs.ex_open_field_pv.constraints.energy_cap_equals: 3.0000000000000004e-05
+
+            SVK.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00532
+
+            SVN.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00702
+
+            ESP.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.18523
+
+            SWE.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.13470000000000001
+
+            ALB.techs.ex_ccgt.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_ccgt.constraints.energy_cap_equals: 0.04206
+
+            BEL.techs.ex_ccgt.constraints.energy_cap_equals: 0.06915
+
+            BIH.techs.ex_ccgt.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_ccgt.constraints.energy_cap_equals: 0.01305
+
+            HRV.techs.ex_ccgt.constraints.energy_cap_equals: 0.007660000000000001
+
+            CZE.techs.ex_ccgt.constraints.energy_cap_equals: 0.016200000000000003
+
+            DNK.techs.ex_ccgt.constraints.energy_cap_equals: 0.015680000000000003
+
+            EST.techs.ex_ccgt.constraints.energy_cap_equals: 0.0018800000000000002
+
+            FIN.techs.ex_ccgt.constraints.energy_cap_equals: 0.0178
+
+            FRA.techs.ex_ccgt.constraints.energy_cap_equals: 0.13068000000000002
+
+            DEU.techs.ex_ccgt.constraints.energy_cap_equals: 0.33145
+
+            GRC.techs.ex_ccgt.constraints.energy_cap_equals: 0.060300000000000006
+
+            HUN.techs.ex_ccgt.constraints.energy_cap_equals: 0.040350000000000004
+
+            IRL.techs.ex_ccgt.constraints.energy_cap_equals: 0.04265
+
+            ITA.techs.ex_ccgt.constraints.energy_cap_equals: 0.46287000000000006
+
+            LVA.techs.ex_ccgt.constraints.energy_cap_equals: 0.01157
+
+            LTU.techs.ex_ccgt.constraints.energy_cap_equals: 0.01518
+
+            LUX.techs.ex_ccgt.constraints.energy_cap_equals: 0.0007000000000000001
+
+            MNE.techs.ex_ccgt.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_ccgt.constraints.energy_cap_equals: 0.18351
+
+            MKD.techs.ex_ccgt.constraints.energy_cap_equals: 0.00251
+
+            POL.techs.ex_ccgt.constraints.energy_cap_equals: 0.0407
+
+            PRT.techs.ex_ccgt.constraints.energy_cap_equals: 0.04585
+
+            ROU.techs.ex_ccgt.constraints.energy_cap_equals: 0.019880000000000002
+
+            SRB.techs.ex_ccgt.constraints.energy_cap_equals: 0.00608
+
+            SVK.techs.ex_ccgt.constraints.energy_cap_equals: 0.01183
+
+            SVN.techs.ex_ccgt.constraints.energy_cap_equals: 0.006180000000000001
+
+            ESP.techs.ex_ccgt.constraints.energy_cap_equals: 0.29903
+
+            SWE.techs.ex_ccgt.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_ccgt.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_ccgt.constraints.energy_cap_equals: 0.41371
+
+            ALB.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            AUT.techs.ex_oils.constraints.energy_cap_equals: 0.0012000000000000001
+
+            BEL.techs.ex_oils.constraints.energy_cap_equals: 0.00455
+
+            BIH.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            HRV.techs.ex_oils.constraints.energy_cap_equals: 0.00045000000000000004
+
+            CZE.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            DNK.techs.ex_oils.constraints.energy_cap_equals: 0.009590000000000001
+
+            EST.techs.ex_oils.constraints.energy_cap_equals: 0.013300000000000001
+
+            FIN.techs.ex_oils.constraints.energy_cap_equals: 0.01051
+
+            FRA.techs.ex_oils.constraints.energy_cap_equals: 0.03038
+
+            DEU.techs.ex_oils.constraints.energy_cap_equals: 0.040830000000000005
+
+            GRC.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            HUN.techs.ex_oils.constraints.energy_cap_equals: 0.00425
+
+            IRL.techs.ex_oils.constraints.energy_cap_equals: 0.01272
+
+            ITA.techs.ex_oils.constraints.energy_cap_equals: 0.015430000000000001
+
+            LVA.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            LTU.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            LUX.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            MNE.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            MKD.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            POL.techs.ex_oils.constraints.energy_cap_equals: 0.00393
+
+            PRT.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            ROU.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            SRB.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            SVK.techs.ex_oils.constraints.energy_cap_equals: 0.0025900000000000003
+
+            SVN.techs.ex_oils.constraints.energy_cap_equals: 0.00058
+
+            ESP.techs.ex_oils.constraints.energy_cap_equals: 0.0067
+
+            SWE.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_oils.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_oils.constraints.energy_cap_equals: 0.00316
+
+            ALB.techs.ex_biofuel.constraints.energy_cap_equals: 0.0032600000000000003
+
+            AUT.techs.ex_biofuel.constraints.energy_cap_equals: 0.00585
+
+            BEL.techs.ex_biofuel.constraints.energy_cap_equals: 0.010960000000000001
+
+            BIH.techs.ex_biofuel.constraints.energy_cap_equals: 0.0
+
+            BGR.techs.ex_biofuel.constraints.energy_cap_equals: 0.0008
+
+            HRV.techs.ex_biofuel.constraints.energy_cap_equals: 0.0012000000000000001
+
+            CZE.techs.ex_biofuel.constraints.energy_cap_equals: 0.0051
+
+            DNK.techs.ex_biofuel.constraints.energy_cap_equals: 0.021390000000000003
+
+            EST.techs.ex_biofuel.constraints.energy_cap_equals: 0.00169
+
+            FIN.techs.ex_biofuel.constraints.energy_cap_equals: 0.01947
+
+            FRA.techs.ex_biofuel.constraints.energy_cap_equals: 0.02341
+
+            DEU.techs.ex_biofuel.constraints.energy_cap_equals: 0.10449000000000001
+
+            GRC.techs.ex_biofuel.constraints.energy_cap_equals: 0.00127
+
+            HUN.techs.ex_biofuel.constraints.energy_cap_equals: 0.0026200000000000004
+
+            IRL.techs.ex_biofuel.constraints.energy_cap_equals: 0.0
+
+            ITA.techs.ex_biofuel.constraints.energy_cap_equals: 0.016540000000000003
+
+            LVA.techs.ex_biofuel.constraints.energy_cap_equals: 0.00177
+
+            LTU.techs.ex_biofuel.constraints.energy_cap_equals: 0.00169
+
+            LUX.techs.ex_biofuel.constraints.energy_cap_equals: 0.00068
+
+            MNE.techs.ex_biofuel.constraints.energy_cap_equals: 0.0
+
+            NLD.techs.ex_biofuel.constraints.energy_cap_equals: 0.012010000000000002
+
+            MKD.techs.ex_biofuel.constraints.energy_cap_equals: 7.000000000000001e-05
+
+            POL.techs.ex_biofuel.constraints.energy_cap_equals: 0.006580000000000001
+
+            PRT.techs.ex_biofuel.constraints.energy_cap_equals: 0.006470000000000001
+
+            ROU.techs.ex_biofuel.constraints.energy_cap_equals: 0.00118
+
+            SRB.techs.ex_biofuel.constraints.energy_cap_equals: 0.00034
+
+            SVK.techs.ex_biofuel.constraints.energy_cap_equals: 0.00234
+
+            SVN.techs.ex_biofuel.constraints.energy_cap_equals: 0.00047000000000000004
+
+            ESP.techs.ex_biofuel.constraints.energy_cap_equals: 0.012530000000000001
+
+            SWE.techs.ex_biofuel.constraints.energy_cap_equals: 0.0
+
+            CHE.techs.ex_biofuel.constraints.energy_cap_equals: 0.0
+
+            GBR.techs.ex_biofuel.constraints.energy_cap_equals: 0.04528
+
+            NOR-1_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.005650818543944401
+
+            NOR-2_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.005650818543944401
+
+            NOR-3_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0022280023882633904
+
+            NOR-4_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.005650818543944401
+
+            NOR-5_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0005258341534536181
+
+            NOR-6_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00638160284769896
+
+            NOR-7_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00445865620168867
+
+            NOR-8_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00420862108262108
+
+            NOR-9_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0029410854700854705
+
+            NOR-10_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00416665427373793
+
+            NOR-11_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00638160284769896
+
+            NOR-12_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.004629184846173401
+
+            NOR-13_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00575027806209485
+
+            NOR-14_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00445865620168867
+
+            NOR-15_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0029410854700854705
+
+            NOR-16_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00817158403254513
+
+            NOR-17_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0005258341534536181
+
+            NOR-18_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.0022280023882633904
+
+            NOR-19_1.techs.ex_hydro_run_of_river.constraints.energy_cap_equals: 0.00817158403254513
+
+            NOR-1_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00322484812272227
+
+            NOR-2_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00322484812272227
+
+            NOR-3_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.015792273967929
+
+            NOR-4_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00322484812272227
+
+            NOR-5_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00441466584654638
+
+            NOR-6_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0036418971523010405
+
+            NOR-7_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0389557283862528
+
+            NOR-8_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.010238795278795301
+
+            NOR-9_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.007155115995116001
+
+            NOR-10_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0349813457262621
+
+            NOR-11_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0036418971523010405
+
+            NOR-12_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0026418151538266004
+
+            NOR-13_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.040758469123166205
+
+            NOR-14_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.0389557283862528
+
+            NOR-15_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.007155115995116001
+
+            NOR-16_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00466341596745487
+
+            NOR-17_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00441466584654638
+
+            NOR-18_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.015792273967929
+
+            NOR-19_1.techs.ex_hydro_reservoir.constraints.energy_cap_equals: 0.00466341596745487
+
+            NOR-1_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-2_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-3_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.000839723643807574
+
+            NOR-4_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-5_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-6_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-7_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0026456154120585097
+
+            NOR-8_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.00017858363858363902
+
+            NOR-9_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.000124798534798535
+
+            NOR-10_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-11_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-12_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-13_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.002167252814739
+
+            NOR-14_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0026456154120585097
+
+            NOR-15_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.000124798534798535
+
+            NOR-16_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-17_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-18_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.000839723643807574
+
+            NOR-19_1.techs.ex_pumped_hydro.constraints.energy_cap_equals: 0.0
+
+            NOR-1_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00037766666666666705
+
+            NOR-2_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00037766666666666705
+
+            NOR-3_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.000199
+
+            NOR-4_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00037766666666666705
+
+            NOR-5_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 7.500000000000001e-06
+
+            NOR-6_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00021700000000000002
+
+            NOR-7_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0002565
+
+            NOR-8_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 5.1e-05
+
+            NOR-9_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.000107
+
+            NOR-10_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 1.4e-05
+
+            NOR-11_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00021700000000000002
+
+            NOR-12_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.00028000000000000003
+
+            NOR-13_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.000514
+
+            NOR-14_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0002565
+
+            NOR-15_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.000107
+
+            NOR-16_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0002565
+
+            NOR-17_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 7.500000000000001e-06
+
+            NOR-18_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.000199
+
+            NOR-19_1.techs.ex_open_field_pv.constraints.energy_cap_equals: 0.0002565
+
+            NOR-1_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 7.000000000000001e-05
+
+            NOR-2_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 7.000000000000001e-05
+
+            NOR-3_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.002795
+
+            NOR-4_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 7.000000000000001e-05
+
+            NOR-5_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0032275000000000003
+
+            NOR-6_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0016795
+
+            NOR-7_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0019260000000000002
+
+            NOR-8_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.001542
+
+            NOR-9_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.011283
+
+            NOR-10_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.00547
+
+            NOR-11_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0016795
+
+            NOR-12_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0
+
+            NOR-13_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.008606
+
+            NOR-14_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0019260000000000002
+
+            NOR-15_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.011283
+
+            NOR-16_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0
+
+            NOR-17_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0032275000000000003
+
+            NOR-18_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.002795
+
+            NOR-19_1.techs.ex_wind_onshore.constraints.energy_cap_equals: 0.0

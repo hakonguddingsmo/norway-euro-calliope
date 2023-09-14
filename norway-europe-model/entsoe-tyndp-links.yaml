@@ -1,0 +1,282 @@
+
+# Max net transfer capacity between countries according to the
+# following ENTSO-E ten-year network development plan 2020 scenario:
+# Scenario: National Trends
+# Case: Reference Grid
+# Year: 2040
+# Climate Year: 2007
+
+links:
+    
+    AUT,CZE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.009000000000000001  # (100,000 MW)
+    
+    AUT,DEU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.054000000000000006  # (100,000 MW)
+    
+    AUT,HUN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.008  # (100,000 MW)
+    
+    AUT,ITA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0068000000000000005  # (100,000 MW)
+    
+    AUT,SVN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.009500000000000001  # (100,000 MW)
+    
+    AUT,CHE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.012  # (100,000 MW)
+    
+    BEL,FRA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.043000000000000003  # (100,000 MW)
+    
+    BEL,DEU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.01  # (100,000 MW)
+    
+    BEL,LUX:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0068000000000000005  # (100,000 MW)
+    
+    BEL,NLD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.024  # (100,000 MW)
+    
+    BEL,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.01  # (100,000 MW)
+    
+    BGR,GRC:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.013500000000000002  # (100,000 MW)
+    
+    BGR,ROU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.012  # (100,000 MW)
+    
+    BGR,MKD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.005  # (100,000 MW)
+    
+    BGR,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.004  # (100,000 MW)
+    
+    HRV,HUN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.017  # (100,000 MW)
+    
+    HRV,SVN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.02  # (100,000 MW)
+    
+    HRV,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.005  # (100,000 MW)
+    
+    CZE,DEU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.021  # (100,000 MW)
+    
+    CZE,POL:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.008  # (100,000 MW)
+    
+    CZE,SVK:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.018000000000000002  # (100,000 MW)
+    
+    DNK,NLD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.007  # (100,000 MW)
+    
+    DNK,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0244  # (100,000 MW)
+    
+    DNK,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.014  # (100,000 MW)
+    
+    EST,FIN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.01016  # (100,000 MW)
+    
+    EST,LVA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.011000000000000001  # (100,000 MW)
+    
+    FIN,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.032  # (100,000 MW)
+    
+    FRA,ITA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0412  # (100,000 MW)
+    
+    FRA,LUX:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0038000000000000004  # (100,000 MW)
+    
+    FRA,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.04  # (100,000 MW)
+    
+    DEU,DNK:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.045000000000000005  # (100,000 MW)
+    
+    DEU,FRA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.030000000000000002  # (100,000 MW)
+    
+    DEU,LUX:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.023000000000000003  # (100,000 MW)
+    
+    DEU,NLD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.05  # (100,000 MW)
+    
+    DEU,POL:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.030000000000000002  # (100,000 MW)
+    
+    DEU,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.00615  # (100,000 MW)
+    
+    DEU,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.014  # (100,000 MW)
+    
+    GRC,ITA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.005  # (100,000 MW)
+    
+    GRC,MKD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.011000000000000001  # (100,000 MW)
+    
+    HUN,ROU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.011000000000000001  # (100,000 MW)
+    
+    HUN,SVK:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.026000000000000002  # (100,000 MW)
+    
+    HUN,SVN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.012  # (100,000 MW)
+    
+    HUN,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006  # (100,000 MW)
+    
+    IRL,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0175  # (100,000 MW)
+    
+    ITA,SVN:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006500000000000001  # (100,000 MW)
+    
+    ITA,MNE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006  # (100,000 MW)
+    
+    LTU,LVA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.009500000000000001  # (100,000 MW)
+    
+    LTU,POL:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.007  # (100,000 MW)
+    
+    LTU,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.007  # (100,000 MW)
+    
+    NLD,GBR:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.01  # (100,000 MW)
+    
+    POL,SVK:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0099  # (100,000 MW)
+    
+    POL,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006  # (100,000 MW)
+    
+    ROU,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.01  # (100,000 MW)
+    
+    ESP,FRA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.05  # (100,000 MW)
+    
+    ESP,PRT:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.042  # (100,000 MW)
+    
+    ALB,GRC:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0025  # (100,000 MW)
+    
+    ALB,MKD:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.005  # (100,000 MW)
+    
+    ALB,MNE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.0035  # (100,000 MW)
+    
+    ALB,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006500000000000001  # (100,000 MW)
+    
+    BIH,HRV:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.007500000000000001  # (100,000 MW)
+    
+    BIH,MNE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.008  # (100,000 MW)
+    
+    BIH,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006  # (100,000 MW)
+    
+    MKD,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006500000000000001  # (100,000 MW)
+    
+    MNE,SRB:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.006  # (100,000 MW)
+    
+    NOR,SWE:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.039950000000000006  # (100,000 MW)
+    
+    CHE,FRA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.037000000000000005  # (100,000 MW)
+    
+    CHE,DEU:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.046000000000000006  # (100,000 MW)
+    
+    CHE,ITA:
+        techs.ac_transmission.constraints:
+            energy_cap_equals: 0.037500000000000006  # (100,000 MW)
+    

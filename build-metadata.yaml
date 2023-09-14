@@ -1,0 +1,405 @@
+description: This is the metadata of the build process of the Euro-Calliope model
+  in the same directory.
+euro-calliope-version: 1.1.0
+euro-calliope-lib-version: 1.1.0
+generated-utc: 2021-12-23 08:30:05.360388
+config:
+  email: tim.troendle@usys.ethz.ch
+  data-sources:
+    biofuel-potentials-and-costs: https://cidportal.jrc.ec.europa.eu/ftp/jrc-opendata/ENSPRESO/ENSPRESO_BIOMASS.xlsx
+    eez: https://geo.vliz.be/geoserver/MarineRegions/wfs?service=WFS&version=1.0.0&request=GetFeature&typeNames=MarineRegions:eez&outputFormat=SHAPE-ZIP
+    hydro-generation: https://zenodo.org/record/5797549/files/hydro-generation.csv?download=1
+    national-phs-storage-capacities: https://zenodo.org/record/5797549/files/pumped-hydro-storage-capacities-gwh.csv?download=1
+    capacity-factors: https://zenodo.org/record/3899687/files/{filename}?download=1
+    gadm: https://biogeo.ucdavis.edu/data/gadm3.6/gpkg/gadm36_{country_code}_gpkg.zip
+    hydro-basins: https://www.dropbox.com/sh/hmpwobbz9qixxpe/AADeU9iCgMd3ZO1KgrFmfWu6a/HydroBASINS/standard/eu/hybas_eu_lev07_v1c.zip?dl=1
+    hydro-stations: https://zenodo.org/record/5119541/files/energy-modelling-toolkit/hydro-power-database-v09.zip?download=1
+    load: https://data.open-power-system-data.org/time_series/2019-06-05/time_series_60min_stacked.csv
+    nuts: https://ec.europa.eu/eurostat/cache/GISCO/geodatafiles/NUTS_2013_01M_SH.zip
+    potentials: https://zenodo.org/record/5112963/files/possibility-for-electricity-autarky.zip
+    entsoe-tyndp: https://2020.entsos-tyndp-scenarios.eu/wp-content/uploads/2020/06/TYNDP-2020-Scenario-Datafile.xlsx.zip
+  root-directory: .
+  cluster-sync:
+    url: euler.ethz.ch
+    send-ignore: .syncignore-send
+    receive-ignore: .syncignore-receive
+    cluster-base-dir: ~/Develop/euro-calliope/
+    local-results-dir: build/cluster
+  scaling-factors:
+    power: 1.0e-05
+    area: 0.0001
+    monetary: 1.0e-09
+  capacity-factors:
+    min: 0.001
+    max: 10
+    average:
+      pv: 0.139
+      onshore: 0.3021
+      offshore: 0.4223
+      ror: 0.536781
+    trim-ninja-timeseries: true
+  year: 2016
+  crs: EPSG:4326
+  parameters:
+    maximum-installable-power-density:
+      pv-on-tilted-roofs: 160
+      pv-on-flat-areas: 80
+      onshore-wind: 8
+      offshore-wind: 15
+    roof-share:
+      E: 0.166
+      N: 0.1817
+      S: 0.1821
+      W: 0.1681
+      flat: 0.302
+    jrc-biofuel:
+      scenario: medium
+      potential-year: 2020
+      cost-year: 2020
+      feedstocks:
+        bioethanol-sugar-beet:
+          include: false
+          id: MINBIOCRP21
+          proxy: farmland
+        rapeseeds:
+          include: false
+          id: MINBIORPS1
+          proxy: farmland
+        oil-crops:
+          include: false
+          id: MINBIOLIQ1
+          proxy: farmland
+        starchy-crops:
+          include: false
+          id: MINBIOCRP11
+          proxy: farmland
+        grassy-crops:
+          include: false
+          id: MINBIOCRP31
+          proxy: farmland
+        willow:
+          include: false
+          id: MINBIOCRP41
+          proxy: forest
+        poplar:
+          include: false
+          id: MINBIOCRP41a
+          proxy: forest
+        manure:
+          include: true
+          id: MINBIOGAS1
+          proxy: farmland
+        primary-agricultural-residues:
+          include: true
+          id: MINBIOAGRW1
+          proxy: farmland
+        roundwood-fuelwood:
+          include: true
+          id: MINBIOWOO
+          proxy: forest
+        roundwood-chips:
+          include: true
+          id: MINBIOWOOa
+          proxy: forest
+        forestry-energy-residues:
+          include: true
+          id: MINBIOFRSR1
+          proxy: forest
+        secondary-forestry-residues-woodchips:
+          include: true
+          id: MINBIOWOOW1
+          proxy: forest
+        secondary-forestry-residues-sawdust:
+          include: true
+          id: MINBIOWOOW1a
+          proxy: forest
+        landscape-care-residues:
+          include: true
+          id: MINBIOFRSR1a
+          proxy: population
+        municipal-waste:
+          include: true
+          id: MINBIOMUN1
+          proxy: population
+        sludge:
+          include: true
+          id: MINBIOSLU1
+          proxy: population
+    biofuel-efficiency: 0.45
+    wind-and-solar-potential-scenario: technical-potential
+    entsoe-tyndp:
+      scenario: National Trends
+      grid: Reference
+      projection-year: 2040
+      ntc_limit: max
+      energy_cap_limit: equals
+  quality-control:
+    load:
+      outlier-data-thresholds:
+        relative-to-mean-min: 0.25
+        relative-to-mean-max: 2
+      max-interpolate-timesteps: 3
+      acceptable-year-diff-for-gap-filling: 5
+      fill-29th-feb-from-28th: true
+      data-source-priority-order:
+      - actual_entsoe_transparency
+      - actual_entsoe_power_statistics
+    hydro:
+      scale-phs-according-to-geth-et-al: false
+      station-nearest-basin-max-km: 1
+    capacity-factor-gridcell-overlap-threshold: 0.97
+  sea-connections:
+    continental: []
+    national:
+    - - ITA
+      - GRC
+    - - EST
+      - FIN
+    - - SWE
+      - LTU
+    - - SWE
+      - POL
+    - - DNK
+      - SWE
+    - - DNK
+      - NLD
+    - - SWE
+      - DEU
+    - - NOR
+      - DNK
+    - - NOR
+      - DEU
+    - - NOR
+      - NLD
+    - - NOR
+      - GBR
+    - - FIN
+      - SWE
+    - - GBR
+      - FRA
+    - - GBR
+      - BEL
+    - - GBR
+      - NLD
+    - - GBR
+      - IRL
+    - - GRC
+      - CYP
+    - - DNK
+      - GBR
+    regional:
+    - - ESP.7_1
+      - ESP.1_1
+    - - ESP.13_1
+      - ESP.10_1
+    - - FRA.5_1
+      - ITA.16_1
+    - - FRA.5_1
+      - ITA.14_1
+    - - ITA.14_1
+      - ITA.8_1
+    - - ITA.4_1
+      - ITA.15_1
+    - - ITA.2_1
+      - GRC.5_1
+    - - GRC.7_1
+      - GRC.4_1
+    - - GRC.3_1
+      - GRC.1_1
+    - - EST.1_1
+      - FIN.4_1
+    - - SWE.8_1
+      - LTU.3_1
+    - - SWE.8_1
+      - SWE.4_1
+    - - SWE.1_1
+      - POL.11_1
+    - - DNK.1_1
+      - SWE.13_1
+    - - SWE.13_1
+      - DEU.15_1
+    - - DNK.4_1
+      - DEU.8_1
+    - - DNK.4_1
+      - DNK.5_1
+    - - DNK.3_1
+      - SWE.21_1
+    - - DNK.5_1
+      - NLD.5_1
+    - - NOR.18_1
+      - DNK.3_1
+    - - NOR.18_1
+      - DEU.15_1
+    - - NOR.18_1
+      - NLD.5_1
+    - - NOR.13_1
+      - GBR.1_1
+    - - FIN.5_1
+      - SWE.16_1
+    - - GBR.1_1
+      - FRA.7_1
+    - - GBR.1_1
+      - BEL.2_1
+    - - GBR.1_1
+      - NLD.14_1
+    - - GBR.4_1
+      - IRL.17_1
+    - - GBR.3_1
+      - GBR.2_1
+    - - DNK.5_1
+      - GBR.1_1
+    - - GRC.1_1
+      - CYP.5_1
+    - - CYP.1_1
+      - CYP.2_1
+    - - EST.7_1
+      - EST.2_1
+    - - EST.7_1
+      - EST.12_1
+  scope:
+    countries:
+    - Austria
+    - Belgium
+    - Bulgaria
+    - Croatia
+    - Cyprus
+    - Czech Republic
+    - Denmark
+    - Estonia
+    - Finland
+    - France
+    - Germany
+    - Greece
+    - Hungary
+    - Ireland
+    - Italy
+    - Latvia
+    - Lithuania
+    - Luxembourg
+    - Netherlands
+    - Poland
+    - Portugal
+    - Romania
+    - Slovakia
+    - Slovenia
+    - Spain
+    - Sweden
+    - United Kingdom
+    - Albania
+    - Bosnia and Herzegovina
+    - Macedonia, Republic of
+    - Montenegro
+    - Norway
+    - Serbia
+    - Switzerland
+    bounds:
+      x_min: -15.8
+      x_max: 37
+      y_min: 30
+      y_max: 75
+  shapes:
+    continental:
+      Austria: nuts0
+      Belgium: nuts0
+      Bulgaria: nuts0
+      Croatia: nuts0
+      Cyprus: nuts0
+      Czech Republic: nuts0
+      Denmark: nuts0
+      Estonia: nuts0
+      Finland: nuts0
+      France: nuts0
+      Germany: nuts0
+      Greece: nuts0
+      Hungary: nuts0
+      Ireland: nuts0
+      Italy: nuts0
+      Latvia: nuts0
+      Lithuania: nuts0
+      Luxembourg: nuts0
+      Netherlands: nuts0
+      Poland: nuts0
+      Portugal: nuts0
+      Romania: nuts0
+      Slovakia: nuts0
+      Slovenia: nuts0
+      Spain: nuts0
+      Sweden: nuts0
+      United Kingdom: nuts0
+      Albania: gadm0
+      Bosnia and Herzegovina: gadm0
+      Macedonia, Republic of: gadm0
+      Montenegro: gadm0
+      Norway: nuts0
+      Serbia: gadm0
+      Switzerland: nuts0
+    national:
+      Austria: nuts0
+      Belgium: nuts0
+      Bulgaria: nuts0
+      Croatia: nuts0
+      Cyprus: nuts0
+      Czech Republic: nuts0
+      Denmark: nuts0
+      Estonia: nuts0
+      Finland: nuts0
+      France: nuts0
+      Germany: nuts0
+      Greece: nuts0
+      Hungary: nuts0
+      Ireland: nuts0
+      Italy: nuts0
+      Latvia: nuts0
+      Lithuania: nuts0
+      Luxembourg: nuts0
+      Netherlands: nuts0
+      Poland: nuts0
+      Portugal: nuts0
+      Romania: nuts0
+      Slovakia: nuts0
+      Slovenia: nuts0
+      Spain: nuts0
+      Sweden: nuts0
+      United Kingdom: nuts0
+      Albania: gadm0
+      Bosnia and Herzegovina: gadm0
+      Macedonia, Republic of: gadm0
+      Montenegro: gadm0
+      Norway: nuts0
+      Serbia: gadm0
+      Switzerland: nuts0
+    regional:
+      Austria: gadm1
+      Belgium: gadm1
+      Bulgaria: gadm1
+      Croatia: gadm1
+      Cyprus: gadm1
+      Czech Republic: gadm1
+      Denmark: gadm1
+      Estonia: gadm1
+      Finland: gadm1
+      France: gadm1
+      Germany: gadm1
+      Greece: gadm1
+      Hungary: gadm1
+      Ireland: gadm1
+      Italy: gadm1
+      Latvia: gadm1
+      Lithuania: gadm1
+      Luxembourg: gadm2
+      Netherlands: gadm1
+      Poland: gadm1
+      Portugal: gadm1
+      Romania: gadm1
+      Slovakia: gadm1
+      Slovenia: gadm1
+      Spain: gadm1
+      Sweden: gadm1
+      United Kingdom: gadm1
+      Albania: gadm1
+      Bosnia and Herzegovina: gadm1
+      Macedonia, Republic of: nuts3
+      Montenegro: gadm1
+      Norway: gadm1
+      Serbia: gadm1
+      Switzerland: gadm1

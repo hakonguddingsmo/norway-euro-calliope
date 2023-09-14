@@ -1,0 +1,2356 @@
+locations:
+    
+    AUT: # Austria
+        coordinates: {lat: 47.594755536426334, lon: 14.123900395695816}
+        available_area: 0.9987509705670179 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.423354939659834 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.7983136859181925 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.044136168682581085 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.05239920000000001 # (100,000 MW)
+                    storage_cap_max: 31.836157366070516 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.035893 # (100,000 MW)
+                    storage_cap_max: 7.0101744186046515 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.03888446132990868 # (100,000 MW)
+                    storage_cap_equals: 170.31394062500001 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    BEL: # Belgium
+        coordinates: {lat: 50.6404258863615, lon: 4.668481627046492}
+        available_area: 0.5074491256605834 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.3781433459797502 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.9287185326697367 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.5215309107910843 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0005901533974257917 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0001273566878980889 # (100,000 MW)
+                    storage_cap_max: 0.11471688167926933 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.013080000000000001 # (100,000 MW)
+                    storage_cap_max: 0.057100000000000005 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.02041793992579909 # (100,000 MW)
+                    storage_cap_equals: 89.43057687500001 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    BGR: # Bulgaria
+        coordinates: {lat: 42.761831653651136, lon: 25.22720011282643}
+        available_area: 4.2601354248434316 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 2.5365831719487906 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.7630834079862578 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.807861080402881 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.000224 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0149954 # (100,000 MW)
+                    storage_cap_max: 13.507147177931035 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.01399 # (100,000 MW)
+                    storage_cap_max: 0.41130000000000005 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.02265813498858447 # (100,000 MW)
+                    storage_cap_equals: 99.24263124999999 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    HRV: # Croatia
+        coordinates: {lat: 45.03301973604705, lon: 16.397830856595398}
+        available_area: 1.6010412998721004 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.2998185949808359 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.6472624873238001 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 2.7467704220663762 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0027866773029167685 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.013276244585987267 # (100,000 MW)
+                    storage_cap_max: 11.95861328094883 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.005187000000000001 # (100,000 MW)
+                    storage_cap_max: 0.2781434782608696 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.00872642979452055 # (100,000 MW)
+                    storage_cap_equals: 38.221762500000004 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    CYP: # Cyprus
+        coordinates: {lat: 35.05101511523539, lon: 33.223972410653985}
+        available_area: 0.19404790101721886 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.0950643599021435 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.19939752058736393 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.19766913955695928 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0008438747146118723 # (100,000 MW)
+                    storage_cap_equals: 3.6961712500000004 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    CZE: # Czechia
+        coordinates: {lat: 49.74398259524302, lon: 15.338041330357486}
+        available_area: 2.631707464129105 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 2.0320395272248986 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.9567771834179359 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00040226382271496005 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.007114839022845104 # (100,000 MW)
+                    storage_cap_max: 6.408710526485178 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.011725095516678392 # (100,000 MW)
+                    storage_cap_max: 0.05618274935075062 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.038160291952054795 # (100,000 MW)
+                    storage_cap_equals: 167.14207875000002 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    DNK: # Denmark
+        coordinates: {lat: 55.95249837761692, lon: 10.069031085905733}
+        available_area: 1.5027190629962832 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.41496631924360994 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.6707667095263983 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 12.505235458154978 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0175490850456621 # (100,000 MW)
+                    storage_cap_equals: 76.8649925 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    EST: # Estonia
+        coordinates: {lat: 58.6717445558587, lon: 25.546806563961095}
+        available_area: 1.190728978987411 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.796701611903012 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.14753895867158898 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 3.21125748881679 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.014831156535388131 # (100,000 MW)
+                    storage_cap_equals: 64.96046562500001 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    FIN: # Finland
+        coordinates: {lat: 64.22700296902357, lon: 26.11919195437904}
+        available_area: 6.420297807474808 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 17.14249436422706 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.5427643966341347 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 7.103683464768716 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.013409500000000001 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.013450000000000002 # (100,000 MW)
+                    storage_cap_max: 12.1151239408867 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.06565709003995432 # (100,000 MW)
+                    storage_cap_equals: 287.57805437499997 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    FRA: # France
+        coordinates: {lat: 46.51488639113253, lon: 2.5829337543887543}
+        available_area: 18.99441266896203 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 7.342714829637706 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 7.46061489404247 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 8.175953624460474 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.06319332562490508 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.09469638216560511 # (100,000 MW)
+                    storage_cap_max: 91.08375383572465 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.050640000000000004 # (100,000 MW)
+                    storage_cap_max: 0.827455516089109 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.1596636907819635 # (100,000 MW)
+                    storage_cap_equals: 699.3269656250001 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    DEU: # Germany
+        coordinates: {lat: 51.0542495914588, lon: 10.370377144604856}
+        available_area: 10.279198279818893 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 6.836747590187192 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 7.464266641756669 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 8.40052072640732 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.03592895549999997 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0020280000000000003 # (100,000 MW)
+                    storage_cap_max: 1.7172186188132108 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0658972 # (100,000 MW)
+                    storage_cap_max: 0.39654737276422763 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.17342788869863013 # (100,000 MW)
+                    storage_cap_equals: 759.6141525 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    GRC: # Greece
+        coordinates: {lat: 39.01828233425433, lon: 22.9888790537732}
+        available_area: 2.6721547710619866 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 3.1358579938292506 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.7645612347202264 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 3.6053994764339183 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00110315 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.025862 # (100,000 MW)
+                    storage_cap_max: 19.12857142857143 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0069900000000000006 # (100,000 MW)
+                    storage_cap_max: 0.0514 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.008317802939497717 # (100,000 MW)
+                    storage_cap_equals: 36.431976875 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    HUN: # Hungary
+        coordinates: {lat: 47.169348956227196, lon: 19.394753532119324}
+        available_area: 5.753391762942076 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.8793882435750962 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.9797462614057939 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00019700000000000002 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.00028000000000000003 # (100,000 MW)
+                    storage_cap_max: 0.2522107586206897 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.031696586044520546 # (100,000 MW)
+                    storage_cap_equals: 138.831046875 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    IRL: # Ireland
+        coordinates: {lat: 53.165313277350535, lon: -8.155321717022773}
+        available_area: 2.867347541740909 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.1070248435583712 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.35873914721445516 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 3.0126306566862393 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00216 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 1e-05 # (100,000 MW)
+                    storage_cap_max: 0.009007527093596061 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0029200000000000003 # (100,000 MW)
+                    storage_cap_max: 0.018000000000000002 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.007307643835616438 # (100,000 MW)
+                    storage_cap_equals: 32.00748 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    ITA: # Italy
+        coordinates: {lat: 42.714626856579464, lon: 12.205752158537038}
+        available_area: 5.66425175542906 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 4.988116534822583 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 4.10106845784578 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 6.01432362257056 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0590196 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.05528240000000001 # (100,000 MW)
+                    storage_cap_max: 49.79577157990147 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.079626 # (100,000 MW)
+                    storage_cap_max: 4.136195000000001 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.06712793293378995 # (100,000 MW)
+                    storage_cap_equals: 294.02034625 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    LVA: # Latvia
+        coordinates: {lat: 56.86213592338671, lon: 24.93386118993222}
+        available_area: 1.8305700507719072 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 2.512875126526356 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.18030637939035488 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 2.2940139582663774 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0064210000000000005 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.00884 # (100,000 MW)
+                    storage_cap_max: 0.46330000000000005 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.020389020547945204 # (100,000 MW)
+                    storage_cap_equals: 89.30390999999999 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    LTU: # Lithuania
+        coordinates: {lat: 55.334435278558075, lon: 23.909178393906384}
+        available_area: 2.3451003429338337 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.6829148091313246 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.3463035270329508 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.512741086873971 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.00101 # (100,000 MW)
+                    storage_cap_max: 0.909760236453202 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.009000000000000001 # (100,000 MW)
+                    storage_cap_max: 0.10800000000000001 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.014169446917808219 # (100,000 MW)
+                    storage_cap_equals: 62.062177500000004 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    LUX: # Luxembourg
+        coordinates: {lat: 49.776608827794384, lon: 6.093032485306177}
+        available_area: 0.06750647239461542 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.06468971563577652 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.048542893550299865 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.012910000000000001 # (100,000 MW)
+                    storage_cap_max: 0.04478 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.001299081107305936 # (100,000 MW)
+                    storage_cap_equals: 5.68997525 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NLD: # Netherlands
+        coordinates: {lat: 52.26192187509821, lon: 5.5767653583674415}
+        available_area: 0.7092687114935369 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.25087307372093204 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 1.5485152409612248 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 9.561447941005044 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.015724644406392693 # (100,000 MW)
+                    storage_cap_equals: 68.8739425 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    POL: # Poland
+        coordinates: {lat: 52.1095869646593, lon: 19.427392071040213}
+        available_area: 12.11371752621755 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 7.319200017416775 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 2.583399292470248 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 2.342223091349379 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00014400368779543974 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.004125063694267516 # (100,000 MW)
+                    storage_cap_max: 0.026902589310440324 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.017050000000000003 # (100,000 MW)
+                    storage_cap_max: 0.1569 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.08983889183789953 # (100,000 MW)
+                    storage_cap_equals: 393.49434625 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    PRT: # Portugal
+        coordinates: {lat: 39.66071159839203, lon: -7.96809285350894}
+        available_area: 2.8539923875279727 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.4186750594198705 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 1.1822588358366632 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 1.0450800869766623 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.016155000000000003 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.013354000000000001 # (100,000 MW)
+                    storage_cap_max: 18.16778112843215 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0364 # (100,000 MW)
+                    storage_cap_max: 5.11576103896104 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0192333140696347 # (100,000 MW)
+                    storage_cap_equals: 84.24191562499999 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    ROU: # Romania
+        coordinates: {lat: 45.83712512372749, lon: 24.991929406124925}
+        available_area: 10.40735419030115 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 4.649518379750252 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 1.7940745928954587 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 1.3374879981592298 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0087045 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.052734801273885364 # (100,000 MW)
+                    storage_cap_max: 47.50101512499262 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.056747948487442926 # (100,000 MW)
+                    storage_cap_equals: 248.55601437500002 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    SVK: # Slovakia
+        coordinates: {lat: 48.71381103937966, lon: 19.473849541785828}
+        available_area: 1.4347349141113461 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.3555015301632882 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.5377225590598621 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.006464900000000002 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.008044 # (100,000 MW)
+                    storage_cap_max: 7.245654794088671 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.010212800000000001 # (100,000 MW)
+                    storage_cap_max: 0.11234079999999999 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.017288967465753424 # (100,000 MW)
+                    storage_cap_equals: 75.7256775 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    SVN: # Slovenia
+        coordinates: {lat: 46.120059404433995, lon: 14.817304114576094}
+        available_area: 0.13068813824132086 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.5161995215040446 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.22055055354003203 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.03076048009246588 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.004514150000000001 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0060219 # (100,000 MW)
+                    storage_cap_max: 5.424242740492611 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.00185 # (100,000 MW)
+                    storage_cap_max: 0.02035 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.012381309218036528 # (100,000 MW)
+                    storage_cap_equals: 54.230134375 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    ESP: # Spain
+        coordinates: {lat: 40.36434356503485, lon: -3.4926653324058328}
+        available_area: 22.36702421623543 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 10.31766646890402 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 2.4893010768157735 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 3.7295797414574774 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0014700824749999987 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.08364235000000002 # (100,000 MW)
+                    storage_cap_max: 81.41594275164846 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.07823272 # (100,000 MW)
+                    storage_cap_max: 40.22348641534721 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.06778742223173516 # (100,000 MW)
+                    storage_cap_equals: 296.908909375 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    SWE: # Sweden
+        coordinates: {lat: 62.37565098576382, lon: 16.276718563733848}
+        available_area: 9.022324534700438 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 23.562684585164195 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.7587518927333027 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 10.591039719055967 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.019950000000000002 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.11674063516863036 # (100,000 MW)
+                    storage_cap_max: 105.21555040375632 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.00092 # (100,000 MW)
+                    storage_cap_max: 1.8430666666666664 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.1072705059931507 # (100,000 MW)
+                    storage_cap_equals: 469.84481625000006 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    GBR: # United Kingdom
+        coordinates: {lat: 54.043556651845826, lon: -2.77870648947651}
+        available_area: 7.805882257017494 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 5.420222248992622 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 3.677470302762681 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 23.889784342203477 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.008484750000000001 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.005240000000000001 # (100,000 MW)
+                    storage_cap_max: 4.719944197044335 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.029050000000000003 # (100,000 MW)
+                    storage_cap_max: 0.2543 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.05081191811265613 # (100,000 MW)
+                    storage_cap_equals: 222.55620133343385 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    ALB: # Albania
+        coordinates: {lat: 41.13347617701411, lon: 20.064219608236215}
+        available_area: 0.35114886793494227 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.7231883955311778 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.1376637354869512 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.29490617522858087 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00384066 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.017602000000000003 # (100,000 MW)
+                    storage_cap_max: 15.252735803639851 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.003150325913242009 # (100,000 MW)
+                    storage_cap_equals: 13.7984275 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    BIH: # Bosnia and Herzegovina
+        coordinates: {lat: 44.17314937068496, lon: 17.7947619675335}
+        available_area: 0.7125125204622745 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.5324108833056689 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.3738117522370233 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0015748215068131686 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0009600000000000001 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.015695 # (100,000 MW)
+                    storage_cap_max: 0.029537795031055906 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0043 # (100,000 MW)
+                    storage_cap_max: 3.4e-05 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.006162862585616438 # (100,000 MW)
+                    storage_cap_equals: 26.993338124999998 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    MKD: # Macedonia
+        coordinates: {lat: 41.59320750651489, lon: 21.690306170765485}
+        available_area: 0.5434803173966706 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.7487909866768122 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.10831237898113338 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00041600000000000003 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.00449 # (100,000 MW)
+                    storage_cap_max: 4.044379665024631 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0017238538812785389 # (100,000 MW)
+                    storage_cap_equals: 7.55048 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    MNE: # Montenegro
+        coordinates: {lat: 42.77645763973149, lon: 19.236771249765663}
+        available_area: 0.13198486836627127 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.39659259765625005 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.06948979822144502 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.05321479949578643 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0031236000000000002 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0036296100000000006 # (100,000 MW)
+                    storage_cap_max: 3.547481033434651 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0002372825342465753 # (100,000 MW)
+                    storage_cap_equals: 1.0392974999999998 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-1_1: # Akershus
+        coordinates: {lat: 60.015252956727764, lon: 11.16004830466074}
+        available_area: 0.05061890758872033 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.24210602819621568 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.0422453925977296 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.03604108870170359 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.003339000000000001 # (100,000 MW)
+                    storage_cap_max: 1.4877090000000002 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0013393181148257448 # (100,000 MW)
+                    storage_cap_equals: 5.866213342936763 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-2_1: # Ãstfold
+        coordinates: {lat: 59.36703813974822, lon: 11.308898000500744}
+        available_area: 0.03339608006328344 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.2299688521680236 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.025253477308164237 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.11547609315432852 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.008651 # (100,000 MW)
+                    storage_cap_max: 6.016848899999999 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0009452751880246418 # (100,000 MW)
+                    storage_cap_equals: 4.140305323547931 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-3_1: # Aust-Agder
+        coordinates: {lat: 58.86582789634201, lon: 7.976335292970447}
+        available_area: 0.18316799481622878 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.45004181522309783 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.006927037704220782 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.11642676574563073 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.013296400000000002 # (100,000 MW)
+                    storage_cap_max: 17.532500000000006 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.001001431770519697 # (100,000 MW)
+                    storage_cap_equals: 4.3862711548762725 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-4_1: # Buskerud
+        coordinates: {lat: 60.291620149131056, lon: 9.105906137290686}
+        available_area: 0.4343198223099113 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.6483897600868345 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.017839798319037738 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.025519285532708633 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.021895 # (100,000 MW)
+                    storage_cap_max: 29.3015499 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.001755881254853843 # (100,000 MW)
+                    storage_cap_equals: 7.6907598962598325 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-5_1: # Finnmark
+        coordinates: {lat: 69.95001637350276, lon: 25.79312820757962}
+        available_area: 3.5391614331584424 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.7516524313624204 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.004729835689769908 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 1.0827163556770956 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0030180000000000003 # (100,000 MW)
+                    storage_cap_max: 4.736694000000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0013850117021134878 # (100,000 MW)
+                    storage_cap_equals: 6.066351255257077 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-6_1: # Hedmark
+        coordinates: {lat: 61.43839938408038, lon: 11.431063610861662}
+        available_area: 1.0087557478521019 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.1776057971394063 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.018507774416471046 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.007382400000000003 # (100,000 MW)
+                    storage_cap_max: 7.324546500000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0029673419014926293 # (100,000 MW)
+                    storage_cap_equals: 12.996957528537719 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-7_1: # Hordaland
+        coordinates: {lat: 60.31961081709877, lon: 6.2613190840548825}
+        available_area: 0.30628212041109804 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.5097073764681816 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.02034703610811471 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.5452570034626638 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.043649700000000013 # (100,000 MW)
+                    storage_cap_max: 52.7145772 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0009100000000000001 # (100,000 MW)
+                    storage_cap_max: 2.187752 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0017463116929236642 # (100,000 MW)
+                    storage_cap_equals: 7.6488452150056485 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-8_1: # Møre og Romsdal
+        coordinates: {lat: 62.60357427753445, lon: 7.6571274532320714}
+        available_area: 0.18813025207817557 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.45891211501121526 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.00786781142345708 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.6845306526806854 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.015109200000000008 # (100,000 MW)
+                    storage_cap_max: 20.013991500000014 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0017603581305655498 # (100,000 MW)
+                    storage_cap_equals: 7.710368611877107 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-9_1: # Nord-Trøndelag
+        coordinates: {lat: 64.28490273437549, lon: 12.22141129568658}
+        available_area: 0.7633299104135484 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.9363849938461185 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.008227122314308522 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.5684285955368185 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.007025600000000001 # (100,000 MW)
+                    storage_cap_max: 6.076313 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.000603 # (100,000 MW)
+                    storage_cap_max: 1.284248 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.002161713430354625 # (100,000 MW)
+                    storage_cap_equals: 9.468304824953258 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-10_1: # Nordland
+        coordinates: {lat: 66.87313540721154, lon: 14.637917600745189}
+        available_area: 0.9029800889395176 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.256219873663783 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.012008838627192098 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 2.316461264213483 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0412926 # (100,000 MW)
+                    storage_cap_max: 140.8205244 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.003352656014540722 # (100,000 MW)
+                    storage_cap_equals: 14.684633343688363 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-11_1: # Oppland
+        coordinates: {lat: 61.40594964996292, lon: 9.365763699387209}
+        available_area: 0.7773490630079061 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.9918202046862246 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.012499747170885672 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.016947799999999996 # (100,000 MW)
+                    storage_cap_max: 21.465828899999995 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.002215128825319176 # (100,000 MW)
+                    storage_cap_equals: 9.70226425489799 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-12_1: # Oslo
+        coordinates: {lat: 59.97908633541577, lon: 10.738534039157681}
+        available_area: 0.0005328834556043149 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.019803102503418924 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.02337799063882638 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.012777277558811426 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 4.7000000000000004e-05 # (100,000 MW)
+                    storage_cap_max: 0.07401600000000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.000764183689974235 # (100,000 MW)
+                    storage_cap_equals: 3.347124562087149 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-13_1: # Rogaland
+        coordinates: {lat: 59.10113222862504, lon: 6.209455210686631}
+        available_area: 0.17866107743345203 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.31664723645657306 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.021137992027738195 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.4037254896514621 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.03153950000000001 # (100,000 MW)
+                    storage_cap_max: 24.968804799999997 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.008400000000000001 # (100,000 MW)
+                    storage_cap_max: 39.699120000000015 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0010913668586363715 # (100,000 MW)
+                    storage_cap_equals: 4.780186840827307 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-14_1: # Sogn og Fjordane
+        coordinates: {lat: 61.403732019867455, lon: 6.563583191269939}
+        available_area: 0.2141037133809179 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.49837989995419985 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.002954182515046863 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.4606397019799527 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.03874300000000001 # (100,000 MW)
+                    storage_cap_max: 53.68819940000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.00353 # (100,000 MW)
+                    storage_cap_max: 6.358097 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0014702713594239639 # (100,000 MW)
+                    storage_cap_equals: 6.439788554276962 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-15_1: # Sør-Trøndelag
+        coordinates: {lat: 63.12097336682847, lon: 10.379320092987456}
+        available_area: 0.748027708459273 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.6865809768515826 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.0167460780423012 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.5128922404315102 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.010639299999999999 # (100,000 MW)
+                    storage_cap_max: 7.7458906 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0019019992847073152 # (100,000 MW)
+                    storage_cap_equals: 8.33075686701804 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-16_1: # Telemark
+        coordinates: {lat: 59.513659021718894, lon: 8.530860354418941}
+        available_area: 0.3076806419700384 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.6842514404374361 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.012166272578030718 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.08049842817919518 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.026246000000000005 # (100,000 MW)
+                    storage_cap_max: 28.61466120000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0016570732257350596 # (100,000 MW)
+                    storage_cap_equals: 7.257980728719561 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-17_1: # Troms
+        coordinates: {lat: 69.27754164827502, lon: 19.50157950108847}
+        available_area: 0.8533119218409062 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.7938623210832477 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.006333054769775738 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.942441139629466 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.0054266 # (100,000 MW)
+                    storage_cap_max: 9.233678000000001 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0024357462640159128 # (100,000 MW)
+                    storage_cap_equals: 10.668568636389699 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-18_1: # Vest-Agder
+        coordinates: {lat: 58.47735614478072, lon: 7.186006630450599}
+        available_area: 0.11952267139963806 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.36652687886148694 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.00970309017050645 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.18185689355014029 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.021556300000000004 # (100,000 MW)
+                    storage_cap_max: 11.734137200000003 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0009087338701326915 # (100,000 MW)
+                    storage_cap_equals: 3.9802543511811885 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    NOR-19_1: # Vestfold
+        coordinates: {lat: 59.320364911694156, lon: 10.134468701379166}
+        available_area: 0.014901794026046992 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.09984131455510856 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.0205782499612596 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.11714457160441435 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 6.6e-05 # (100,000 MW)
+                    storage_cap_max: 0.06072 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+                    storage_cap_max: 0.0 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.0005845789857676136 # (100,000 MW)
+                    storage_cap_equals: 2.5604559576621475 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+
+    Nordvest-A:
+             coordinates: {lat: 66.2334625160033, lon: 9.580682563333205}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.56535 # (100,000 MW)
+
+    Nordvest-C:
+             coordinates: {lat: 63.77727348528509, lon: 6.647918674018392}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.2791 # (100,000 MW)
+
+    Vestavind-A:
+             coordinates: {lat: 61.98188847139684, lon: 3.705499848984722}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0942 # (100,000 MW)
+
+    Sonnavind-A:
+             coordinates: {lat: 57.51624269346626, lon: 7.391032075313718}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.145 # (100,000 MW)
+
+    Sorvest-C:
+             coordinates: {lat: 57.03010166666666, lon: 3.885691333333333}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0883 # (100,000 MW)
+
+    Nordvest-B:
+             coordinates: {lat: 64.75230047773151, lon: 7.4073873455581065}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.17185 # (100,000 MW)
+
+    Vestavind-F:
+             coordinates: {lat: 59.29246740310406, lon: 4.486899244007714}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.09945 # (100,000 MW)
+
+    Sorvest-E:
+             coordinates: {lat: 57.46338156777517, lon: 4.7279178938130615}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0508 # (100,000 MW)
+
+    Sorvest-A:
+             coordinates: {lat: 57.902875901945016, lon: 3.538708345316385}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0728 # (100,000 MW)
+
+    Vestavind-B:
+             coordinates: {lat: 61.055637369125, lon: 3.617045877934187}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.14925 # (100,000 MW)
+
+    Vestavind-C:
+             coordinates: {lat: 60.42613822750994, lon: 3.8050534350495897}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0532 # (100,000 MW)
+
+    Vestavind-D:
+             coordinates: {lat: 60.33704866163536, lon: 4.383741013958421}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0367 # (100,000 MW)
+
+    Sorvest-F:
+             coordinates: {lat: 56.81703137903876, lon: 4.87200885184854}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.1351 # (100,000 MW)
+
+    Sorvest-B:
+             coordinates: {lat: 57.34806360441718, lon: 3.36027152160891}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.10895 # (100,000 MW)
+
+    Nordavind-B:
+             coordinates: {lat: 71.77702736596271, lon: 27.75296304042616}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.11195 # (100,000 MW)
+
+    Nordavind-A:
+             coordinates: {lat: 71.11164359204321, lon: 32.008031497494834}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.21375 # (100,000 MW)
+
+    Nordavind-D:
+             coordinates: {lat: 71.44972828341056, lon: 18.801369393638666}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.2056 # (100,000 MW)
+
+    Nordavind-C:
+             coordinates: {lat: 71.72764915327568, lon: 20.014435056358717}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.0527 # (100,000 MW)
+
+    Vestavind-E:
+             coordinates: {lat: 59.11131654890148, lon: 3.852830718503737}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.07375 # (100,000 MW)
+
+    Sorvest-D:
+             coordinates: {lat: 56.464697612214316, lon: 3.84018710516057}
+             techs:
+                 wind_offshore:
+                     constraints:
+                        energy_cap_max: 0.06075 # (100,000 MW)
+    
+    SRB: # Serbia
+        coordinates: {lat: 44.21642338428516, lon: 20.79828471802393}
+        available_area: 2.603488827742636 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 1.4710960512948037 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.7948991319870148 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.00215 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.018753000000000002 # (100,000 MW)
+                    storage_cap_max: 7.841607808171745 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0061400000000000005 # (100,000 MW)
+                    storage_cap_max: 0.06754 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.01418741352739726 # (100,000 MW)
+                    storage_cap_equals: 62.140871250000004 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+    CHE: # Switzerland
+        coordinates: {lat: 46.80162077863029, lon: 8.227115102529536}
+        available_area: 0.14838868635818364 # (10,000 km2) usable by onshore wind or open field pv
+        techs:
+            demand_elec:
+            battery:
+            hydrogen:
+            open_field_pv:
+            wind_onshore_competing:
+            wind_onshore_monopoly:
+                constraints:
+                    energy_cap_max: 0.4275919580817223 # (100,000 MW)
+            roof_mounted_pv:
+                constraints:
+                    energy_cap_max: 0.5971794910850416 # (100,000 MW)
+            wind_offshore:
+                constraints:
+                    energy_cap_max: 0.0 # (100,000 MW)
+            hydro_run_of_river:
+                constraints:
+                    energy_cap_max: 0.040842798000000013 # (100,000 MW)
+            hydro_reservoir:
+                constraints:
+                    energy_cap_max: 0.09127930000000005 # (100,000 MW)
+                    storage_cap_max: 22.83602043579628 # (100,000 MWh)
+            pumped_hydro:
+                constraints:
+                    energy_cap_max: 0.0495705 # (100,000 MW)
+                    storage_cap_max: 5.79339009541749 # (100,000 MWh)
+            biofuel:
+                constraints:
+                    resource: 0.020668913670091327 # (100,000 MW)
+                    storage_cap_equals: 90.529841875 # (100,000 MWh) (0.5x annual yield) # ASSUME < 1 for numerical range
+    
+overrides:
+    freeze-hydro-capacities:
+        locations:
+            
+            AUT.techs: # Austria
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.044136168682581085 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.05239920000000001 # (100,000 MW)
+                        storage_cap_equals: 31.836157366070516 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.035893 # (100,000 MW)
+                        storage_cap_equals: 7.0101744186046515 # (100,000 MWh)
+            
+            BEL.techs: # Belgium
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0005901533974257917 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0001273566878980889 # (100,000 MW)
+                        storage_cap_equals: 0.11471688167926933 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.013080000000000001 # (100,000 MW)
+                        storage_cap_equals: 0.057100000000000005 # (100,000 MWh)
+            
+            BGR.techs: # Bulgaria
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.000224 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0149954 # (100,000 MW)
+                        storage_cap_equals: 13.507147177931035 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.01399 # (100,000 MW)
+                        storage_cap_equals: 0.41130000000000005 # (100,000 MWh)
+            
+            HRV.techs: # Croatia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0027866773029167685 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.013276244585987267 # (100,000 MW)
+                        storage_cap_equals: 11.95861328094883 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.005187000000000001 # (100,000 MW)
+                        storage_cap_equals: 0.2781434782608696 # (100,000 MWh)
+            
+            CYP.techs: # Cyprus
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            CZE.techs: # Czechia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00040226382271496005 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.007114839022845104 # (100,000 MW)
+                        storage_cap_equals: 6.408710526485178 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.011725095516678392 # (100,000 MW)
+                        storage_cap_equals: 0.05618274935075062 # (100,000 MWh)
+            
+            DNK.techs: # Denmark
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            EST.techs: # Estonia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            FIN.techs: # Finland
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.013409500000000001 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.013450000000000002 # (100,000 MW)
+                        storage_cap_equals: 12.1151239408867 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            FRA.techs: # France
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.06319332562490508 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.09469638216560511 # (100,000 MW)
+                        storage_cap_equals: 91.08375383572465 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.050640000000000004 # (100,000 MW)
+                        storage_cap_equals: 0.827455516089109 # (100,000 MWh)
+            
+            DEU.techs: # Germany
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.03592895549999997 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0020280000000000003 # (100,000 MW)
+                        storage_cap_equals: 1.7172186188132108 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0658972 # (100,000 MW)
+                        storage_cap_equals: 0.39654737276422763 # (100,000 MWh)
+            
+            GRC.techs: # Greece
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00110315 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.025862 # (100,000 MW)
+                        storage_cap_equals: 19.12857142857143 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0069900000000000006 # (100,000 MW)
+                        storage_cap_equals: 0.0514 # (100,000 MWh)
+            
+            HUN.techs: # Hungary
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00019700000000000002 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.00028000000000000003 # (100,000 MW)
+                        storage_cap_equals: 0.2522107586206897 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            IRL.techs: # Ireland
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00216 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 1e-05 # (100,000 MW)
+                        storage_cap_equals: 0.009007527093596061 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0029200000000000003 # (100,000 MW)
+                        storage_cap_equals: 0.018000000000000002 # (100,000 MWh)
+            
+            ITA.techs: # Italy
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0590196 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.05528240000000001 # (100,000 MW)
+                        storage_cap_equals: 49.79577157990147 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.079626 # (100,000 MW)
+                        storage_cap_equals: 4.136195000000001 # (100,000 MWh)
+            
+            LVA.techs: # Latvia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0064210000000000005 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.00884 # (100,000 MW)
+                        storage_cap_equals: 0.46330000000000005 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            LTU.techs: # Lithuania
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.00101 # (100,000 MW)
+                        storage_cap_equals: 0.909760236453202 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.009000000000000001 # (100,000 MW)
+                        storage_cap_equals: 0.10800000000000001 # (100,000 MWh)
+            
+            LUX.techs: # Luxembourg
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.012910000000000001 # (100,000 MW)
+                        storage_cap_equals: 0.04478 # (100,000 MWh)
+            
+            NLD.techs: # Netherlands
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            POL.techs: # Poland
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00014400368779543974 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.004125063694267516 # (100,000 MW)
+                        storage_cap_equals: 0.026902589310440324 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.017050000000000003 # (100,000 MW)
+                        storage_cap_equals: 0.1569 # (100,000 MWh)
+            
+            PRT.techs: # Portugal
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.016155000000000003 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.013354000000000001 # (100,000 MW)
+                        storage_cap_equals: 18.16778112843215 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0364 # (100,000 MW)
+                        storage_cap_equals: 5.11576103896104 # (100,000 MWh)
+            
+            ROU.techs: # Romania
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0087045 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.052734801273885364 # (100,000 MW)
+                        storage_cap_equals: 47.50101512499262 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            SVK.techs: # Slovakia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.006464900000000002 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.008044 # (100,000 MW)
+                        storage_cap_equals: 7.245654794088671 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.010212800000000001 # (100,000 MW)
+                        storage_cap_equals: 0.11234079999999999 # (100,000 MWh)
+            
+            SVN.techs: # Slovenia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.004514150000000001 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0060219 # (100,000 MW)
+                        storage_cap_equals: 5.424242740492611 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.00185 # (100,000 MW)
+                        storage_cap_equals: 0.02035 # (100,000 MWh)
+            
+            ESP.techs: # Spain
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0014700824749999987 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.08364235000000002 # (100,000 MW)
+                        storage_cap_equals: 81.41594275164846 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.07823272 # (100,000 MW)
+                        storage_cap_equals: 40.22348641534721 # (100,000 MWh)
+            
+            SWE.techs: # Sweden
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.019950000000000002 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.11674063516863036 # (100,000 MW)
+                        storage_cap_equals: 105.21555040375632 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.00092 # (100,000 MW)
+                        storage_cap_equals: 1.8430666666666664 # (100,000 MWh)
+            
+            GBR.techs: # United Kingdom
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.008484750000000001 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.005240000000000001 # (100,000 MW)
+                        storage_cap_equals: 4.719944197044335 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.029050000000000003 # (100,000 MW)
+                        storage_cap_equals: 0.2543 # (100,000 MWh)
+            
+            ALB.techs: # Albania
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00384066 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.017602000000000003 # (100,000 MW)
+                        storage_cap_equals: 15.252735803639851 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            BIH.techs: # Bosnia and Herzegovina
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0009600000000000001 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.015695 # (100,000 MW)
+                        storage_cap_equals: 0.029537795031055906 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0043 # (100,000 MW)
+                        storage_cap_equals: 3.4e-05 # (100,000 MWh)
+            
+            MKD.techs: # Macedonia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00041600000000000003 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.00449 # (100,000 MW)
+                        storage_cap_equals: 4.044379665024631 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            MNE.techs: # Montenegro
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0031236000000000002 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.0036296100000000006 # (100,000 MW)
+                        storage_cap_equals: 3.547481033434651 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                        storage_cap_equals: 0.0 # (100,000 MWh)
+            
+            NOR.techs: # Norway
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.0 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.31758310000000056 # (100,000 MW)
+                        storage_cap_equals: 447.3546694999997 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.013443 # (100,000 MW)
+                        storage_cap_equals: 49.529217 # (100,000 MWh)
+            
+            SRB.techs: # Serbia
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.00215 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.018753000000000002 # (100,000 MW)
+                        storage_cap_equals: 7.841607808171745 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0061400000000000005 # (100,000 MW)
+                        storage_cap_equals: 0.06754 # (100,000 MWh)
+            
+            CHE.techs: # Switzerland
+                hydro_run_of_river:
+                    constraints:
+                        energy_cap_equals: 0.040842798000000013 # (100,000 MW)
+                hydro_reservoir:
+                    constraints:
+                        energy_cap_equals: 0.09127930000000005 # (100,000 MW)
+                        storage_cap_equals: 22.83602043579628 # (100,000 MWh)
+                pumped_hydro:
+                    constraints:
+                        energy_cap_equals: 0.0495705 # (100,000 MW)
+                        storage_cap_equals: 5.79339009541749 # (100,000 MWh)
+            

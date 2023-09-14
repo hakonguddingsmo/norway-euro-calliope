@@ -1,0 +1,171 @@
+techs:
+    ex_open_field_pv:
+        essentials:
+            name: Existing Open field PV
+            carrier: electricity
+            parent: supply
+        constraints:
+            resource_area_per_energy_cap: 0.125
+            resource_area_max: inf
+            resource: file=capacityfactors-open-field-pv.csv
+            resource_unit: energy_per_cap
+            energy_cap_max: inf
+    ex_wind_onshore:
+        essentials:
+            name: Existing Onshore competing
+            carrier: electricity
+            parent: supply
+        constraints:
+            resource: file=capacityfactors-wind-onshore.csv
+            resource_unit: energy_per_cap
+            resource_area_per_energy_cap: 1.25
+            resource_area_max: inf
+            energy_cap_max: inf
+    ex_wind_offshore:
+        essentials:
+            name: Existing Offshore wind
+            carrier: electricity
+            parent: supply
+        constraints:
+            energy_cap_max: inf
+            resource: file=capacityfactors-wind-offshore.csv
+            resource_unit: energy_per_cap
+    ex_hydro_run_of_river:
+        essentials:
+            name: Existing Run of river hydro
+            parent: supply
+            carrier: electricity
+        constraints:
+            resource: file=capacityfactors-hydro-ror.csv
+            resource_unit: energy_per_cap
+            energy_cap_max: inf
+            lifetime: 50
+        costs:
+            monetary:
+                energy_cap: 0
+    ex_hydro_reservoir:
+        essentials:
+            name: Existing Hydro reservoir
+            parent: supply_plus
+            carrier: electricity
+        constraints:
+            resource: file=capacityfactors-hydro-reservoir-inflow.csv
+            resource_unit: energy_per_cap
+            energy_cap_max: inf
+            lifetime: 50
+        costs:
+            monetary:
+                energy_cap: 0
+    ex_biofuel:
+        essentials:
+            name: Existing Biofuel
+            parent: supply_plus
+            carrier: electricity
+        constraints:
+            energy_eff: 1.0
+            energy_cap_max: inf
+    ex_coal:
+        essentials:
+            name: Existing Coal
+            carrier: electricity
+            parent: supply
+        constraints:
+            energy_eff: 0.44
+            resource: inf
+            lifetime: 25
+            energy_cap_max: inf
+            energy_ramping: 0.2 #5 hours https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+        costs:
+            monetary:
+                om_prod: 0.0001315
+                om_annual: 4.603
+                om_con: 0.001092
+            co2:
+                om_prod: 8.2e-7
+    ex_lignite:
+        essentials:
+            name: Existing Lignite
+            carrier: electricity
+            parent: supply
+        constraints:
+            energy_eff: 0.44
+            resource: inf
+            lifetime: 25
+            energy_cap_max: inf
+            energy_ramping: 0.1429 #7 hours https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1
+        costs:
+            monetary:
+                om_prod: 0.0001315
+                om_annual: 4.603
+                om_con: 0.001092
+            co2:
+                om_prod: 9.1e-7
+    ex_oils:
+        essentials:
+            name: Existing Oil
+            carrier: electricity
+            parent: supply
+        constraints:
+            energy_eff: 0.44
+            resource: inf
+            lifetime: 25
+            energy_cap_max: inf
+            energy_ramping: 0.2 #https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1 
+        costs:
+            monetary:
+                energy_cap: 0
+                om_prod: 0.0001315
+                om_annual: 4.603
+                om_con: 0.001092
+            co2:
+                om_prod: 9.1e-7
+    ex_ccgt:
+        essentials:
+            name: Existing CCGT
+            carrier: electricity
+            parent: supply
+        constraints:
+            energy_eff: 0.58
+            resource: inf
+            lifetime: 25
+            energy_cap_max: inf
+            energy_ramping: 0.5 # 2 hours from https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Sep/IRENA_Flexibility_in_CPPs_2019.pdf?la=en&hash=AF60106EA083E492638D8FA9ADF7FD099259F5A1 table 1
+        costs:
+            monetary:
+                energy_cap: 0
+                om_prod: 0.0000132
+                om_annual: 3.048
+                om_con: 0.003761
+            co2:
+                om_prod: 4.9e-7
+    ex_nuclear:
+        essentials:
+            name: Existing Nuclear
+            carrier: electricity
+            parent: supply
+        constraints:
+            resource: inf
+            lifetime: 25
+            energy_cap_max: inf
+            energy_ramping: 0.08333334 #12 hours
+        costs:
+            monetary:
+                energy_cap: 0
+                om_prod: 0.0000658
+                om_annual: 7.89
+                om_con: 0.00064
+            co2:
+                om_prod: 1.2e-8
+    ex_pumped_hydro:
+        essentials:
+            name: Existing Pumped hydro power storage
+            parent: storage
+            carrier: electricity
+        constraints:
+            energy_cap_max: inf
+            storage_cap_max: inf
+            lifetime: 30
+        costs:
+            monetary:
+                energy_cap: 0
+                interest_rate: 0

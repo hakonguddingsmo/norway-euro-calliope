@@ -1,0 +1,72 @@
+overrides:
+    load-shedding:
+        locations:
+            
+            AUT.techs.load_shedding:
+            
+            BEL.techs.load_shedding:
+            
+            BGR.techs.load_shedding:
+            
+            HRV.techs.load_shedding:
+            
+            CYP.techs.load_shedding:
+            
+            CZE.techs.load_shedding:
+            
+            DNK.techs.load_shedding:
+            
+            EST.techs.load_shedding:
+            
+            FIN.techs.load_shedding:
+            
+            FRA.techs.load_shedding:
+            
+            DEU.techs.load_shedding:
+            
+            GRC.techs.load_shedding:
+            
+            HUN.techs.load_shedding:
+            
+            IRL.techs.load_shedding:
+            
+            ITA.techs.load_shedding:
+            
+            LVA.techs.load_shedding:
+            
+            LTU.techs.load_shedding:
+            
+            LUX.techs.load_shedding:
+            
+            NLD.techs.load_shedding:
+            
+            POL.techs.load_shedding:
+            
+            PRT.techs.load_shedding:
+            
+            ROU.techs.load_shedding:
+            
+            SVK.techs.load_shedding:
+            
+            SVN.techs.load_shedding:
+            
+            ESP.techs.load_shedding:
+            
+            SWE.techs.load_shedding:
+            
+            GBR.techs.load_shedding:
+            
+            ALB.techs.load_shedding:
+            
+            BIH.techs.load_shedding:
+            
+            MKD.techs.load_shedding:
+            
+            MNE.techs.load_shedding:
+            
+            NOR.techs.load_shedding:
+            
+            SRB.techs.load_shedding:
+            
+            CHE.techs.load_shedding:
+            

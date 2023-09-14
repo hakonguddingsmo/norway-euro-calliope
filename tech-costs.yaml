@@ -1,0 +1,135 @@
+tech_groups:
+    pv_on_roof:  # from [@JRC:2014] Table 9
+        constraints.lifetime: 25
+        costs.monetary:
+            energy_cap: 88.0 # (10,000 EUR2013/MW)
+            om_annual: 1.6382360000000002 # (10,000 EUR2013/MW) 2% of CAPEX
+            om_prod: 0.0001 # (10,000 EUR2013/MW) stolen from om_annual for technical reasons
+    wind_onshore: # from [@JRC:2014] Table 4
+        constraints.lifetime: 25
+        costs.monetary:
+            energy_cap: 110.0 # (10,000 EUR2013/MW)
+            om_annual: 1.6053604 # (10,000 EUR2013/MW) 1.7% of CAPEX
+            om_prod: 0.0001 # (10,000 EUR2013/MW) stolen from om_annual for technical reasons
+techs:
+    open_field_pv: # from [@JRC:2014] Table 7
+        constraints.lifetime: 25
+        costs.monetary:
+            energy_cap: 52.0 # (10,000 EUR2013/MW)
+            om_annual: 0.762236 # (10,000 EUR2013/MW) 1.7% of CAPEX
+            om_prod: 0.0001 # (10,000 EUR2013/MW) stolen from om_annual for technical reasons
+    wind_offshore: # from [@JRC:2014] Table 5
+        constraints.lifetime: 30
+        costs.monetary:
+            energy_cap: 228.0 # (10,000 EUR2013/MW)
+            om_annual: 4.8740652 # (10,000 EUR2013/MW) 2.3% of CAPEX
+            om_prod: 0.0001 # (10,000 EUR2013/MW) stolen from om_annual for technical reasons
+    biofuel: # from [@JRC:2014] Table 48 Anaerobic digestion
+        constraints.lifetime: 20
+        costs.monetary:
+            energy_cap: 230.0 # (10,000 EUR2013/MW)
+            om_annual: 9.43 # (10,000 EUR2013/MW) 4.1% of CAPEX
+            om_con: 0.004413821302102454 # (10,000 EUR2013/MW)
+            om_prod: 0 # 3.1 (EUR2013/MWh) added to om_con because value is very small and causing poor numerical range
+    hydro_run_of_river: # from [@JRC:2014] Table 14
+        constraints.lifetime: 60
+        costs.monetary:
+            energy_cap: 562.0 # (10,000 EUR2013/MW)
+            om_annual: 16.86 # (10,000 EUR2013/MW) 3% of CAPEX
+            om_prod: 0.0005 # (10,000 EUR2013/MW) 
+    hydro_reservoir: # from [@JRC:2014] Table 12
+        constraints.lifetime: 60
+        costs.monetary:
+            energy_cap: 337.0 # (10,000 EUR2013/MW)
+            om_annual: 10.110000000000001 # (10,000 EUR2013/MW) 3% of CAPEX
+            om_prod: 0.0005 #  (10,000 EUR2013/MW) 
+    load_shedding:
+        costs.monetary:
+            om_prod: 0.8 # (10,000 EUR/MWh)
+    battery: # from [@schmidt:2019] Table S4
+        costs.monetary:
+            storage_cap: 10.123820000000002 # (10,000 EUR2015/MWh), 802 $2015
+            energy_cap: 8.558536000000002 # (10,000 EUR2015/MW), 678 $2015
+            om_annual: 0.126224 # (10,000 EUR2015/MW/year), 10 $2015
+            om_prod: 3.780000000000001e-05 # (10,000 EUR2015/MWh), 3 $2015
+        constraints:
+            energy_eff: 0.9273  # 0.86 round trip efficiency
+            storage_loss: 0  # No loss over time assumed
+            lifetime: 10
+    pumped_hydro: # from [@schmidt:2019] Table S4
+        costs.monetary:
+            storage_cap: 7.357566 # (10,000 EUR2015/MWh), 80 $2015
+            energy_cap: 103.833246 # (10,000 EUR2015/MW), 1129 $2015
+            om_annual: 0.7357260000000001 # (10,000 EUR2015/MW/year), 8 $2015
+            om_prod: 0.00010200000000000001 # (10,000 EUR2015/MWh), 1 $2015, rounded to 1€ for numeric range
+        constraints:
+            energy_eff: 0.8832 # 0.78 round-trip
+            lifetime: 55
+    hydrogen: # from [@schmidt:2019] Table S4
+        costs.monetary:
+            storage_cap: 0.9223830000000001  # (10,000 EUR2015/MWh), 31 $2015
+            energy_cap: 161.18147100000002  # (10,000 EUR2015/MW), 5417 $2015
+            om_annual: 1.368708 # (10,000 EUR2015/MW/year), 46 $2015
+            om_prod: 0
+        constraints:
+            energy_eff: 0.6325  # 0.40 round-trip
+            lifetime: 15
+    free_transmission:
+        costs.monetary.om_prod: 0
+    ac_transmission: # from [@JRC:2014], Table 39
+        constraints.lifetime: 60
+        costs.monetary:
+            energy_cap_per_distance: 9e-05 # (10,000 EUR2013/MW/m)
+            om_annual_investment_fraction: 0.015
+
+overrides:
+    dea-renewable-cost: # from [@DEA:2020]
+        tech_groups.pv_on_roof: #  Sheet 22 - Photovoltaics Small (last updated 2016)
+            constraints.lifetime: 40 # inverter lifetime is shorter but the replacement cost is included in O&M
+            costs.monetary:
+                energy_cap: 58.75 # (10,000 EUR2015/MW)
+                om_annual: 0.791736 # (10,000 EUR2015/MW)
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+        techs.open_field_pv: # Sheet 22 - Photovoltaics Large (last updated 2016) 
+            constraints.lifetime: 40 # inverter lifetime is shorter but the replacement cost is included in O&M
+            costs.monetary:
+                energy_cap: 30.125 # (10,000 EUR2015/MW) with DC/AC sizing factor 38 (2030), 32 (2040), 29 (2050)
+                om_annual: 0.503236 # (10,000 EUR2015/MW/year) with DC/AC sizing factor
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+        tech_groups.wind_onshore: # Sheet 20 Onshore Turbines (last updated 2019)
+            constraints.lifetime: 30
+            costs.monetary:
+                energy_cap: 96.30000000000001 # (10,000 EUR2015/MW) #98 (2040) 104 (2030)
+                om_annual: 0.8693604 # (10,000 EUR2015/MW/year)
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+        techs.wind_offshore: # Sheet 21 Offshore Turbines (last updated 2019)
+            constraints.lifetime: 30
+            costs.monetary:
+                energy_cap: 177.70000000000002 # (10,000 EUR2015/MW) 
+                om_annual: 2.8748652000000003 # (10,000 EUR2015/MW/year)
+                om_prod: 0.0001 # (10,000 EUR2015/MW) stolen from om_annual for technical reasons
+    schroeder-hydro-cost: # from [@schroeder:2013]
+        techs.hydro_run_of_river:
+            constraints.lifetime: 60
+            costs.monetary:
+                energy_cap: 300.0 # (10,000 EUR2010/MW) Table 33
+                om_annual: 5.529779844 # (10,000 EUR2010/MW) Table 34
+                om_prod: 0.0001 # (10,000 EUR2010/MW) stolen from om_annual for technical reasons
+        techs.hydro_reservoir:
+            constraints.lifetime: 60
+            costs.monetary:
+                energy_cap: 200.0 # (10,000 EUR2010/MW) Table 33
+                om_annual: 1.529779844 # (10,000 EUR2010/MW) Table 34
+                om_prod: 0.0001 # (10,000 EUR2010/MW) stolen from om_annual for technical reasons
+    no-hydro-fixed-cost: 
+        # Only assign costs to O&M and variable costs
+        techs.pumped_hydro.costs.monetary:
+            storage_cap: 0
+            energy_cap: 0
+        techs.hydro_run_of_river.costs.monetary:
+            energy_cap: 0
+            om_con: 0
+        techs.hydro_reservoir.costs.monetary:
+            energy_cap: 0
+            storage_cap: 0
+            om_con: 0
